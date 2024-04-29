@@ -21,6 +21,11 @@
 .navbar__logo {
     width: 6rem;    
 }
+.navbar__logo:hover{
+    transition: 0.4s ease-out;
+    transform: translateY(5px);
+    background-color: rgb(113, 192, 195);
+}
 .abrir__menu, .cerrar__menu{
     display: none;
 }
@@ -29,10 +34,20 @@
     list-style: none;
     gap: 1rem;
 }
+.navbar__links li:hover{
+    transition: 0.4s ease-out;
+    transform: translateY(5px);
+}
 .navbar__links li a{
     text-decoration: none;
     color: #fff;
+    padding: 0.5rem 1rem; 
+    border-radius: 10px;
 }
+.navbar__links li a:hover {
+    background-color: rgb(113, 192, 195);
+  }
+
 @media screen and (max-width: 700px){
     .abrir__menu, .cerrar__menu{
         display: block;
