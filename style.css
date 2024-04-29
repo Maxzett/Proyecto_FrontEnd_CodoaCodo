@@ -102,6 +102,7 @@
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 .actividades__title{
     padding: 2rem;
@@ -173,7 +174,8 @@
 /*destinos */
 .destinos{
     background-color: #ffddd2;
-    padding: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,6 +292,7 @@
     background-size: cover;
     height: 100vh;
     padding: 2rem;
+    padding-top: 6rem;
     
 }
 .nosotros__section{
@@ -312,6 +315,7 @@
 @media (max-width:525px){
     .nosotros{
        padding: 1rem;
+       padding-top: 5rem;
     }
     .nosotros__container{
         padding: 0.5rem;
@@ -325,6 +329,7 @@
 .contacto{
     background-color: #a8dadc;
     padding: 2rem;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
