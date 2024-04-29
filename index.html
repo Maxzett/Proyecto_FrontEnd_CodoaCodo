@@ -210,45 +210,47 @@
       </div>
       <div class="contacto__container">
         <form action="#">
-          <div class="form__control">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required />
+          <div class="left">
+            <div class="form__control">
+              <label for="nombre">Nombre y Apellido:</label>
+              <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required />
+            </div>
+            <!--  -->
+            <div class="form__control">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Ingrese su correo electronico" required />
+            </div>
+            <!--  -->
+            <div class="form__control">
+              <label for="img">Foto de Perfil:</label>
+              <input type="file" id="img" required />
+            </div>
+            <!--  -->
+            <div class="form__control">
+              <label for="lugar">Ciudades:</label>
+              <select name="ciudades" id="lugar" required>
+                <option value="bariloche">San Carlos de Bariloche</option>
+                <option value="villaLaAngostura">Villa La Angostura</option>
+                <option value="sanMartinDeLosAndes">San Martin de Los Andes</option>
+                <option value="villaTraful">Villa Traful</option>
+                <option value="elChalten">El Chalten</option>
+                <option value="elCalafate">El Calafate</option>
+              </select>
+            </div>
           </div>
-          <!--  -->
-          <div class="form__control">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Ingrese su correo electronico" required />
+          <!-- right -->
+          <div class="rigth">
+            <div class="form__control">
+              <label for="comentarios">Comentarios:</label>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="6"></textarea>
+            </div>
+            <!--  -->
+            <div class="form__control checkbox">
+              <label for="terminos">Acepto Terminos y Condiciones:</label>
+              <input type="checkbox" id="terminos" required />
+            </div>
+            <input type="submit" value="Enviar" />
           </div>
-          <!--  -->
-          <div class="form__control">
-            <label for="img">Foto de Perfil:</label>
-            <input type="file" id="img" required />
-          </div>
-          <!--  -->
-          <div class="form__contol">
-            <label for="lugar">Ciudades:</label>
-            <select name="ciudades" id="lugar" required>
-              <option value="bariloche">San Carlos de Bariloche</option>
-              <option value="villaLaAngostura">Villa La Angostura</option>
-              <option value="sanMartinDeLosAndes">
-                San Martin de Los Andes
-              </option>
-              <option value="villaTraful">Villa Traful</option>
-              <option value="elChalten">El Chalten</option>
-              <option value="elCalafate">El Calafate</option>
-            </select>
-          </div>
-          <!--  -->
-          <div class="form__control">
-            <label for="comentarios">Comentarios:</label>
-            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-          </div>
-          <!--  -->
-          <div class="form__control checkbox">
-            <label for="terminos">Acepto Terminos y Condiciones:</label>
-            <input type="checkbox" id="terminos" required />
-          </div>
-          <input type="submit" value="Enviar" />
         </form>
       </div>
     </section>
@@ -259,30 +261,28 @@
       <section class="footer__logo">
         <img src="./images/logotipo.png" alt="logotipo" />
       </section>
-      <section>
-        <div>
-          <ul class="footer__redes">
-            <li>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="bi bi-tiktok"></i></a>
-            </li>
-          </ul>
-        </div>
+      <section class="footer__redes">
+        <ul>
+          <li>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
       </section>
       <section class="footer__news">
         <div>
-          <h4>newsletter</h4>
-          <form>
+          <h4>Newsletter</h4>
+          <form action="#">
             <input type="email" placeholder="Email" />
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Enviar" />
           </form>
         </div>
       </section>
