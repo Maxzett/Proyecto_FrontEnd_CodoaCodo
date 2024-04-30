@@ -378,6 +378,9 @@ form .left , .rigth{
     flex-direction: column;
     margin: 1rem;
 }
+.form__control input, textarea, select{
+    cursor: pointer;
+}
 .checkbox{
    display: flex;
    flex-direction: row;
@@ -397,7 +400,10 @@ form .left , .rigth{
     padding: .2rem;
     margin: 0 4rem;
     border:none;
-    
+    cursor: pointer;
+}
+.form__button:hover{
+    background-color: #a8dadc;
 }
 @media (max-width:635px){
     .contacto__title{
