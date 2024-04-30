@@ -335,9 +335,9 @@
     .nosotros__container{
         padding: 0.5rem;
     }
-    .nosotros__container p{
+    /* .nosotros__container p{
         font-size: 0.8rem;
-    }
+    } */
 }
 
 /* formulario contacto */
