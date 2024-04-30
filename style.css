@@ -17,6 +17,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+
 }
 .navbar__logo {
     width: 6rem;    
@@ -31,8 +32,15 @@
 }
 .navbar__links li a{
     text-decoration: none;
-    color: #fff;
+    color: #333;
+    padding: 0.5rem 1rem; 
+    border: 2px solid transparent;
+    border-radius: 10px;
+    
 }
+.navbar__links li a:hover {
+    background-color: rgb(113, 192, 195);
+  }
 @media screen and (max-width: 700px){
     .abrir__menu, .cerrar__menu{
         display: block;
@@ -102,7 +110,6 @@
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
 }
 .actividades__title{
     padding: 2rem;
@@ -174,8 +181,7 @@
 /*destinos */
 .destinos{
     background-color: #ffddd2;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,7 +298,6 @@
     background-size: cover;
     height: 100vh;
     padding: 2rem;
-    padding-top: 6rem;
     
 }
 .nosotros__section{
@@ -315,7 +320,6 @@
 @media (max-width:525px){
     .nosotros{
        padding: 1rem;
-       padding-top: 5rem;
     }
     .nosotros__container{
         padding: 0.5rem;
@@ -329,7 +333,6 @@
 .contacto{
     background-color: #a8dadc;
     padding: 2rem;
-    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,6 +375,9 @@
     padding: 1rem;
     border: none;
 }
+.error{
+    color: red;
+}
 @media (max-width:500px){
     .contacto__title{
         padding-top: 2rem;
@@ -386,30 +392,66 @@
 }
 
 /* footer */
-.footer__container{
-    background-color: #334755;
+.footer__container {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: space-between;
     align-items: center;
-}
-.footer__logo img{
-    width: 8rem;
-}
-.footer__redes{
+    padding: 20px;
+    background-color: cadetblue;
+    color: white;
+  }
+  
+  .footer__container img {
+    width: 100px; 
+  }
+  
+  .footer-link ul {
     display: flex;
-    gap: 1rem;
-    font-size: 1.5rem;
-    
-}
-.copyright{
-    padding: 1rem 2rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link li {
+    margin-right: 15px; 
+  }
+  
+  .redes {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .redes li {
+    margin-right: 10px;
+  }
+  
+  .redes li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    color: #333;
     text-align: center;
-}
-@media(max-width:625px){
+    line-height: 50px;
+    transition: all 0.5s;
+  }
+  
+  .redes li a:hover {
+    background-color: rgb(113, 192, 195);
+    color: cian;
+  }
+  
+  .copyright {
+    background-color: rgb(28, 47, 48);
+    color: white;
+    padding: 10px 20px; 
+    text-align: center;
+  }
+  @media(max-width:625px){
     .footer__container{
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
     }
-}
+  }
