@@ -7,6 +7,12 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+a:link,
+a:visited {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+}
+
 /* navbar */
 .navbar__container{
     display: flex;
@@ -46,7 +52,6 @@
     .navbar__links__container{
         opacity: 0;
         visibility: hidden;
-
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -95,6 +100,9 @@
 .section__header__text button a{
     text-decoration: none;
     color: #fff;
+}.section__header__text button:hover {
+    background:#e29578;
+    color: white;
 }
 
 /* actividades */
@@ -113,8 +121,7 @@
     letter-spacing: 5px;
 }
 .actividades__title p{
-    font-size: 0.8rem;
-    
+    font-size: 0.8rem; 
 }
 .section__actividades{
     display: flex;
@@ -134,15 +141,13 @@
 }
 .section__actividades .container .box{
     background-color: burlywood;
-    transition: 0.5s;
-    
-    
+    transition: 0.5s;    
 }
 .section__actividades .container .box:hover{
     background-color: #606c38;
 }
 .box1{
-    background: url(./images/toninasoveras.jpg); 
+    background: url(./images/actividades/toninasoveras.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -150,7 +155,7 @@
     align-items: end;
 }
 .box2{
-    background: url(./images/bosquearaucarias.jpg); 
+    background: url(./images/actividades/bosquearaucarias.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -158,7 +163,7 @@
     align-items: end;
 }
 .box3{
-    background: url(./images/acamparenparuqes.jpg); 
+    background: url(./images/actividades/acamparenparques.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:bottom;
@@ -166,7 +171,7 @@
     align-items: end;
 }
 .box4{
-    background: url(./images/Montañismoyescalada.jpg); 
+    background: url(./images/actividades/montañismoyescalada.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:unset;
@@ -174,7 +179,7 @@
     align-items: end;
 }
 .box5{
-    background: url(./images/senderismolagopuelo.jpg); 
+    background: url(./images/actividades/senderismolagopuelo.jpg); 
     background-repeat: no-repeat;
     background-size:cover;
     background-position:0;
@@ -183,7 +188,7 @@
     align-content: center;
 }
 .box6{
-    background: url(./images/remarenlagospatagonicos.jpg); 
+    background: url(./images/actividades/remarenlagospatagonicos.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:bottom;
@@ -191,7 +196,7 @@
     align-items:start;
 }
 .box7{
-    background: url(./images/avesparquearrayanes.jpg); 
+    background: url(./images/actividades/avesparquearrayanes.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -350,8 +355,7 @@
     background: url(./images/fondo-nosotros.jpg);
     background-size: cover;
     height: 100vh;
-    padding: 2rem;
-    
+    padding: 2rem;  
 }
 .nosotros__section{
     display: flex;
@@ -470,3 +474,150 @@
     }
 }
 
+/*:::Ventana Modal:::*/
+#btn-modal1{
+    display: none;
+}
+#btn-modal2{
+    display: none;
+}
+#btn-modal3{
+    display: none;
+}
+#btn-modal4{
+    display: none;
+}
+#btn-modal5{
+    display: none;
+}
+#btn-modal6{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal1:checked ~ .container-modal{
+    display: flex;
+}
+#btn-modal2:checked ~ .container-modal{
+    display: flex;
+}
+#btn-modal3:checked ~ .container-modal{
+    display: flex;
+}
+#btn-modal4:checked ~ .container-modal{
+    display: flex;
+}
+#btn-modal5:checked ~ .container-modal{
+    display: flex;
+}
+#btn-modal6:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffddd2;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    overflow: hidden;   
+}
+.content-modal .encabezado-modal{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.content-modal .imagen-descripcion-modal{
+   position: relative;
+}
+.content-modal h2{
+    padding: 0.5rem;
+}
+.content-modal h3{
+    padding: 0.5rem;   
+}
+.content-modal p{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.content-modal img{
+    max-width: 800px;
+    position: absolute;   
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:center;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 2rem;
+}
+.content-modal .btn-cerrar label:hover{
+    background:#e29578;
+    color: black;
+}
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media (max-width:990px) {
+    .container-modal{
+        width: 100%;
+    }
+    .content-modal{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        overflow-y: scroll; 
+    }
+}
+@media (max-width:625px){
+    .container-modal{
+       width: 100%;     
+    }
+    .content-modal{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        overflow-y: scroll; 
+    }
+    .encabezado-modal h2{
+        font-size: 1rem;
+    }
+    .encabezado-modal h3{
+        font-size: 0.9rem;
+    }
+    .encabezado-modal p{
+        font-size: 0.7rem;
+    }
+    .imagen-descripcion-modal{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        position: relative;
+    }
+}
+/*:::Fin Ventana Modal:::*/
