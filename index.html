@@ -210,6 +210,7 @@
       </div>
       <div class="contacto__container">
         <form id="formulario" action="#" method="POST">
+          <div class="left">
           <div class="form__control">
             <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido"/>
@@ -241,7 +242,9 @@
             </select>
             <div id="errorLugar" class="error"></div>
           </div>
-        
+        </div>
+          <!-- right -->
+          <div class="rigth">
           <div class="form__control">
             <label for="comentarios">Comentarios:</label>
             <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
@@ -250,11 +253,12 @@
         
           <div class="form__control checkbox">
             <label for="terminos">Acepto Términos y Condiciones:</label>
-            <input type="checkbox" id="terminos"  />
+            <input type="checkbox" id="terminos"/>
             <div id="errorTerminos" class="error"></div>
+            <div>
+            <input type="submit" value="Enviar" id="Enviar" />
           </div>
-        
-          <input type="submit" value="Enviar" id="Enviar" />
+        </div>
         </form>
         
       </div>

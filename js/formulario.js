@@ -161,7 +161,8 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     const terminos = document.getElementById('terminos').checked;
     const errorTerminos = document.getElementById('errorTerminos');
     if (!terminos) {
-      errorTerminos.textContent = 'Debe aceptar los términos y condiciones.';
+      errorTerminos.textContent = 
+      'Debe aceptar los términos y condiciones.';
     } else {
       errorTerminos.textContent = '';
     }
