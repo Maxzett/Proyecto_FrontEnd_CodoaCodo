@@ -251,11 +251,11 @@
             <div id="errorComentarios" class="error"></div>
           </div>
         
-          <div class="form__control checkbox">
+          <div class="form__control">
             <label for="terminos">Acepto Términos y Condiciones:</label>
             <input type="checkbox" id="terminos"/>
             <div id="errorTerminos" class="error"></div>
-            <div>
+            
             <input type="submit" value="Enviar" id="Enviar" />
           </div>
         </div>
@@ -266,45 +266,37 @@
   </main>
   <footer>
     <div class="footer__container">
-      <section class="">
-        <img src="./images/logotipo.png" />
-        
+      <section class="footer__logo">
+        <img src="./images/logotipo.png" alt="logotipo" />
       </section>
-      <section>
-        <div class="footer-link">
-          <ul>
-            <li><a href="#">Actividades</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Destinos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
+      <section class="footer__redes">
+        <ul>
+          <li>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
       </section>
-      <section>
+      <section class="footer__news">
         <div>
-          <div>
-            <ul class="redes">
-              <li>
-                <a href="#"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-square-x-twitter fa-2xl"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-square-github fa-2xl"></i></a>
-              </li>
-            </ul>
-          </div>
+          <h4>Newsletter</h4>
+          <form action="#">
+            <input type="email" placeholder="Email" />
+            <input type="submit" value="Enviar" />
+          </form>
         </div>
       </section>
     </div>
     <section class="copyright">
-      <div class="copyright__container">
-        <p>&copy;copyright Proyecto Front-end 2024 - Codo a Codo</p>
-      </div>
+      <p>2024 Proyecto Integrador | copyright </p>
     </section>
   </footer>
   <script src="./js/formulario.js"></script>
