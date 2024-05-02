@@ -429,7 +429,7 @@ a:visited {
 }
 .contacto__container{
     background-color: #ffe8d6;
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: .5rem;
 }
 .contacto__container form{
