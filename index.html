@@ -1,299 +1,288 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="shortcut icon" href="./images/favicom.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Patagonia Turismo y Aventura</title>
-  </head>
+<!DOCTYPE html>
+<html lang="zxx">
 
-  <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="#inicio"><img class="navbar__logo" src="./images/logotipo.png"
-            alt="logotipo" /></a>
-        <button class="abrir__menu" id="abrir">
-          <i class="bi bi-list"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="shortcut icon" href="./images/favicom.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Patagonia Turismo y Aventura</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#inicio"><img class="navbar__logo" src="./images/logotipo.png" alt="logotipo" /></a>
+      <button class="abrir__menu" id="abrir">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="navbar__links__container" id="nav">
+        <button class="cerrar__menu" id="cerrar">
+          <i class="bi bi-x"></i>
         </button>
-        <div class="navbar__links__container" id="nav">
-          <button class="cerrar__menu" id="cerrar">
-            <i class="bi bi-x"></i>
-          </button>
-          <ul class="navbar__links">
-            <li><a href="#actividades">ACTIVIDADES</a></li>
-            <li><a href="#destinos">DESTINOS</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-          </ul>
+        <ul class="navbar__links">
+          <li><a href="#actividades">ACTIVIDADES</a></li>
+          <li><a href="#destinos">DESTINOS</a></li>
+          <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio">
+    <section class="section__header">
+      <div class="section__header__container">
+        <div class="section__header__text">
+          <h1>TURISMO Y AVENTURA</h1>
+          <p>Vivi la naturaleza Argentina</p>
+          <button><a href="#destinos">DESTINOS</a></button>
         </div>
       </div>
-    </nav>
+    </section>
+  </header>
 
-    <header id="inicio">
-      <section class="section__header">
-        <div class="section__header__container">
-          <div class="section__header__text">
-            <h1>TURISMO Y AVENTURA</h1>
-            <p>Vivi la naturaleza Argentina</p>
-            <button><a href="#destinos">DESTINOS</a></button>
+  <main>
 
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <main>
-
-      <div class="actividades" id="actividades">
-        <div class="actividades__title">
-          <h2>Actividades</h2>
-          <p>Viví algunas de las experiencias más hermosas que te regala la
-            naturaleza.</p>
-        </div>
-        <section class="section__actividades">
-          <div class="container">
-            <div class="box box1">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Navegá con los delfines más lindos del mundo</h3>
-                  <p>En las costas de Santa Cruz y Chubut animate a ir en busca
-                    de las toninas overas, también conocidas como delfines
-                    patagónicos.
-                    En Puerto Deseado (Santa Cruz) y en Rawson (Chubut) parten
-                    excursiones embarcadas para vivir la adrenalina y la emoción
-                    de verlas de cerca. ¡Son muy curiosas y les gusta jugar
-                    cerca de los barcos!
-                    <br>Dónde: en Puerto Deseado e Isla Pingüino (Santa Cruz) y
-                    en Rawson (Chubut).
-                    <br>Cuándo: de septiembre a marzo. </p>
-                </div>
-              </div>
-            </div>
-            <div class="box box2">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Recorré un bosque prehistórico</h3>
-                  <p>En el oeste de Neuquén podés conocer el increíble bosque de
-                    pehuenes o araucarias, árboles que casi no cambiaron desde
-                    la época de los dinosaurios y que las comunidades mapuches
-                    consideran sagrados. Entre lagos y montañas, y a los pies
-                    del volcán Lanín, estos bosques crean un paisaje hermoso que
-                    podés recorrer en auto, en bici o a pie.
-                    <br>Dónde En el Parque Nacional Lanín (Neuquén) y zonas
-                    cercanas.
-                    <br>Cuándo de octubre a abril. </p>
-                </div>
-              </div>
-            </div>
-            <div class="box box3">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Recorré un bosque prehistórico</h3>
-                  <p>Despertate frente a un lago o un río, escuchá los mil
-                    sonidos del bosque, respirá el aire más puro, contemplá
-                    montañas con nieves eternas y disfrutá de lo simple mientras
-                    visitás algunas de las áreas protegidas más hermosas de
-                    Argentina.
-                    <br>Dónde: en los parques nacionales Lanín (Neuquén), Nahuel
-                    Huapi (Neuquén y Río Negro), Lago Puelo y Los Alerces
-                    (Chubut) y el Área Protegida Río Azul - Lago Escondido (Río
-                    Negro).
-                    <br>Cuándo de octubre a abril. </p>
-                </div>
-              </div>
-            </div>
-            <div class="box box4">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Montañismo y escalada</h3>
-                  <p>En Neuquén te esperan las montañas más altas de la
-                    Patagonia: los volcanes Domuyo, Tromen, Lanín, Copahue, y
-                    cerros como el Corona en la Cordillera del Viento, entre
-                    muchas otras elevaciones.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="box box5">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h2>Viví la naturaleza Patagónica</h2>
-                </div>
-              </div>
-            </div>
-            <div class="box box6">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Remá los lagos de la Patagonia</h3>
-                  <p>Subite a un kayak y remá los lagos más lindos del sur.
-                    Llegá hasta lugares a los que solo se accede desde el agua
-                    dentro. Alcanzá a ver el fondo de los lagos. Contemplá cómo
-                    los colores cambian según los reflejos del sol y maravillate
-                    con los bosques.
-                    <br>Dónde: en todos los lagos del Parque Nacional Lanín
-                    (Neuquén), Nahuel Huapi (Neuquén y Río Negro)
-                    <br>Cuándo: de septiembre a abril </p>
-                </div>
-              </div>
-            </div>
-            <div class="box box7">
-              <div class="content">
-                <div class="texto_actividad">
-                  <h3>Observación de aves</h3>
-                  <p>Pegado a Villa La Angostura, este parque nacional es ideal
-                    para recorrer un paisaje único en busca de aves del bosque
-                    andino patagónico como el rayadito, el picolezna patagónico,
-                    las cachañas, el picaflor rubí, el comesebo y la remolinera
-                    araucana.
-                    <br>Dónde: Parque nacional Los Arrayanes (Neuquén)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <div class="actividades" id="actividades">
+      <div class="actividades__title">
+        <h2>Actividades</h2>
+        <p>Viví algunas de las experiencias más hermosas que te regala la
+          naturaleza.</p>
       </div>
-
-      <section class="destinos" id="destinos">
-        <div class="destinos__title">
-          <h2>Destinos</h2>
-          <p>La gran variedad de Parques Nacionales y Provinciales, que hay en
-            la Patagonia Andina, estan listos para que
-            los visites. Conoce mas sobre ellos aqui.</p>
-        </div>
-        <div class="destinos__container">
-          <div class="wrapper">
-            <div class="card">
-              <img src="./images/destinos/parque-nahuel-huapi.jpg" alt>
-              <div class="info">
-                <h1>Parque Nacional Nahuel Huapi</h1>
-                <p>Patagonia Andina</p>
-                <p>Neuquen, Rio Negro</p>
-                <div class="boton-modal">
-                  <button><a href="#modal1"><label for="btn-modal1">Ver
-                        más</label></a></button>
-
-                </div>
-
+      <section class="section__actividades">
+        <div class="container">
+          <div class="box box1">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Navegá con los delfines más lindos del mundo</h3>
+                <p>En las costas de Santa Cruz y Chubut animate a ir en busca
+                  de las toninas overas, también conocidas como delfines
+                  patagónicos.
+                  En Puerto Deseado (Santa Cruz) y en Rawson (Chubut) parten
+                  excursiones embarcadas para vivir la adrenalina y la emoción
+                  de verlas de cerca. ¡Son muy curiosas y les gusta jugar
+                  cerca de los barcos!
+                  <br>Dónde: en Puerto Deseado e Isla Pingüino (Santa Cruz) y
+                  en Rawson (Chubut).
+                  <br>Cuándo: de septiembre a marzo. </p>
               </div>
             </div>
-            <div class="card">
-              <img src="./images/destinos/parque-lago-puelo.jpg" />
-              <div class="info">
-                <h1>Parque Nacional Lago Puelo</h1>
-                <p>Patagonia Andina</p>
-                <p>Chubut</p>
-                <div class="boton-modal">
-                  <button><a href="#modal2"><label for="btn-modal2">Ver
-                        más</label></a></button>
-                </div>
+          </div>
+          <div class="box box2">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Recorré un bosque prehistórico</h3>
+                <p>En el oeste de Neuquén podés conocer el increíble bosque de
+                  pehuenes o araucarias, árboles que casi no cambiaron desde
+                  la época de los dinosaurios y que las comunidades mapuches
+                  consideran sagrados. Entre lagos y montañas, y a los pies
+                  del volcán Lanín, estos bosques crean un paisaje hermoso que
+                  podés recorrer en auto, en bici o a pie.
+                  <br>Dónde En el Parque Nacional Lanín (Neuquén) y zonas
+                  cercanas.
+                  <br>Cuándo de octubre a abril. </p>
               </div>
             </div>
-            <div class="card">
-              <img src="./images/destinos/ParqueLanin.jpg" alt>
-              <div class="info">
-                <h1>Parque Nacional Lanin</h1>
-                <p>Patagonia Andina</p>
-                <p>Neuquen</p>
-                <div class="boton-modal">
-                  <button><a href="#modal3"><label for="btn-modal3">Ver
-                        más</label></a></button>
-                </div>
+          </div>
+          <div class="box box3">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Recorré un bosque prehistórico</h3>
+                <p>Despertate frente a un lago o un río, escuchá los mil
+                  sonidos del bosque, respirá el aire más puro, contemplá
+                  montañas con nieves eternas y disfrutá de lo simple mientras
+                  visitás algunas de las áreas protegidas más hermosas de
+                  Argentina.
+                  <br>Dónde: en los parques nacionales Lanín (Neuquén), Nahuel
+                  Huapi (Neuquén y Río Negro), Lago Puelo y Los Alerces
+                  (Chubut) y el Área Protegida Río Azul - Lago Escondido (Río
+                  Negro).
+                  <br>Cuándo de octubre a abril. </p>
               </div>
             </div>
-            <div class="card">
-              <img src="./images/destinos/parque-los-alerces.jpg" alt>
-              <div class="info">
-                <h1>Parque Nacional Los Alerces</h1>
-                <p>Patagonia Andina</p>
-                <p>Chubut</p>
-                <div class="boton-modal">
-                  <button><a href="#modal4"><label for="btn-modal4">Ver
-                        más</label></a></button>
-                </div>
+          </div>
+          <div class="box box4">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Montañismo y escalada</h3>
+                <p>En Neuquén te esperan las montañas más altas de la
+                  Patagonia: los volcanes Domuyo, Tromen, Lanín, Copahue, y
+                  cerros como el Corona en la Cordillera del Viento, entre
+                  muchas otras elevaciones.
+                </p>
               </div>
             </div>
-            <div class="card">
-              <img src="./images/destinos/parque-arrayanes.jpg" alt>
-              <div class="info">
-                <h1>Parque Nacional Los Arrayanes</h1>
-                <p>Patagonia Andina</p>
-                <p>Neuquen</p>
-                <div class="boton-modal">
-                  <button><a href="#modal5"><label for="btn-modal5">Ver
-                        más</label></a></button>
-                </div>
+          </div>
+          <div class="box box5">
+            <div class="content">
+              <div class="texto_actividad">
+                <h2>Viví la naturaleza Patagónica</h2>
               </div>
             </div>
-            <div class="card">
-              <img src="./images/destinos/parque_copahue.jpg" alt>
-              <div class="info">
-                <h1>Parque Provincial Copahue</h1>
-                <p>Patagonia Andina</p>
-                <p>Neuquen</p>
-                <div class="boton-modal">
-                  <button><a href="#modal6"><label for="btn-modal6">Ver
-                        más</label></a></button>
-                </div>
+          </div>
+          <div class="box box6">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Remá los lagos de la Patagonia</h3>
+                <p>Subite a un kayak y remá los lagos más lindos del sur.
+                  Llegá hasta lugares a los que solo se accede desde el agua
+                  dentro. Alcanzá a ver el fondo de los lagos. Contemplá cómo
+                  los colores cambian según los reflejos del sol y maravillate
+                  con los bosques.
+                  <br>Dónde: en todos los lagos del Parque Nacional Lanín
+                  (Neuquén), Nahuel Huapi (Neuquén y Río Negro)
+                  <br>Cuándo: de septiembre a abril </p>
+              </div>
+            </div>
+          </div>
+          <div class="box box7">
+            <div class="content">
+              <div class="texto_actividad">
+                <h3>Observación de aves</h3>
+                <p>Pegado a Villa La Angostura, este parque nacional es ideal
+                  para recorrer un paisaje único en busca de aves del bosque
+                  andino patagónico como el rayadito, el picolezna patagónico,
+                  las cachañas, el picaflor rubí, el comesebo y la remolinera
+                  araucana.
+                  <br>Dónde: Parque nacional Los Arrayanes (Neuquén)
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
 
-      <section class="nosotros" id="nosotros">
-        <div class="nosotros__section">
-          <div class="nosotros__container">
-            <h2>NOSOTROS</h2>
-            <h4>PATAGONIA, TURISMO Y AVENTURA</h4>
-            <p> Somos una asociación civil que tiene como fin proteger y
-              propiciar el desarrollo de turismo activo en la
-              Patagonia, generando un verdadero espacio de participación,
-              promoviendo el crecimiento de las distintas
-              actividades, estableciendo vínculos con las organizaciones
-              estatales y privadas, y creando marcos de apoyo y
-              respaldo para sus integrantes.
-              La asociación propicia un trabajo colaborativo y para ello los
-              integrantes del Directorio participan
-              activamente en las mesas de trabajo de diferentes organismos e
-              instituciones públicos, tanto a nivel local,
-              como provincial y nacional. Entre ellos se encuentran el Ente
-              Mixto de Promoción Turística de Bariloche,
-              EMPROTUR; el Ministerio de Turismo, Cultura y Deportes de la
-              Provincia de Río Negro; y el Ministerio de
-              Turismo de la Nación, la Intendencia de Parques Nacionales y su
-              Comisión Asesora Local, Prefectura Naval
-              Argentina, la Cámara de Turismo, entre otros.
-            </p>
+
+    <section class="destinos" id="destinos">
+      <div class="destinos__title">
+        <h2>Destinos</h2>
+        <p>La gran variedad de Parques Nacionales y Provinciales, que hay en la Patagonia Andina, estan listos para que
+          los visites. Conoce mas sobre ellos aqui.</p>
+      </div>
+      <div class="destinos__container">
+        <div class="wrapper">
+          <div class="card">
+            <img src="./images/destinos/parque-nahuel-huapi.jpg" alt="">
+            <div class="info">
+              <h1>Parque Nacional Nahuel Huapi</h1>
+              <p>Patagonia Andina</p>
+              <p>Neuquen, Rio Negro</p>
+              <div class="boton-modal">
+                <button><a href="#modal1"><label for="btn-modal1">Ver
+                      más</label></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/destinos/parque-lago-puelo.jpg" />
+            <div class="info">
+              <h1>Parque Nacional Lago Puelo</h1>
+              <p>Patagonia Andina</p>
+              <p>Chubut</p>
+              <div class="boton-modal">
+                <button><a href="#modal2"><label for="btn-modal2">Ver
+                      más</label></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/destinos/ParqueLanin.jpg" alt="">
+            <div class="info">
+              <h1>Parque Nacional Lanin</h1>
+              <p>Patagonia Andina</p>
+              <p>Neuquen</p>
+              <div class="boton-modal">
+                <button><a href="#modal3"><label for="btn-modal3">Ver
+                      más</label></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/destinos/parque-los-alerces.jpg" alt="">
+            <div class="info">
+              <h1>Parque Nacional Los Alerces</h1>
+              <p>Patagonia Andina</p>
+              <p>Chubut</p>
+              <div class="boton-modal">
+                <button><a href="#modal4"><label for="btn-modal4">Ver
+                      más</label></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/destinos/parque-arrayanes.jpg" alt="">
+            <div class="info">
+              <h1>Parque Nacional Los Arrayanes</h1>
+              <p>Patagonia Andina</p>
+              <p>Neuquen</p>
+              <div class="boton-modal">
+                <button><a href="#modal5"><label for="btn-modal5">Ver
+                      más</label></a></button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/destinos/parque_copahue.jpg" alt="">
+            <div class="info">
+              <h1>Parque Provincial Copahue</h1>
+              <p>Patagonia Andina</p>
+              <p>Neuquen</p>
+              <div class="boton-modal">
+                <button><a href="#modal6"><label for="btn-modal6">Ver
+                      más</label></a></button>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contacto" id="contacto">
-        <div class="contacto__title">
-          <h2>Formulario Contacto</h2>
+    <section class="nosotros" id="nosotros">
+      <div class="nosotros__section">
+        <div class="nosotros__container">
+          <h2>NOSOTROS</h2>
+          <h4>PATAGONIA, TURISMO Y AVENTURA</h4>
+          <p> Somos una asociación civil que tiene como fin proteger y propiciar el desarrollo de turismo activo en la
+            Patagonia, generando un verdadero espacio de participación, promoviendo el crecimiento de las distintas
+            actividades, estableciendo vínculos con las organizaciones estatales y privadas, y creando marcos de apoyo y
+            respaldo para sus integrantes.
+            La asociación propicia un trabajo colaborativo y para ello los integrantes del Directorio participan
+            activamente en las mesas de trabajo de diferentes organismos e instituciones públicos, tanto a nivel local,
+            como provincial y nacional. Entre ellos se encuentran el Ente Mixto de Promoción Turística de Bariloche,
+            EMPROTUR; el Ministerio de Turismo, Cultura y Deportes de la Provincia de Río Negro; y el Ministerio de
+            Turismo de la Nación, la Intendencia de Parques Nacionales y su Comisión Asesora Local, Prefectura Naval
+            Argentina, la Cámara de Turismo, entre otros.
+          </p>
         </div>
-        <div class="contacto__container">
-          <form action="#">
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto__title">
+        <h2>Formulario Contacto</h2>
+      </div>
+      <div class="contacto__container">
+        <form action="#">
+          <div class="left">
             <div class="form__control">
               <label for="nombre">Nombre y Apellido:</label>
-              <input type="text" id="nombre"
-                placeholder="Ingrese su nombre y apellido" required />
+              <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required />
             </div>
             <!--  -->
             <div class="form__control">
               <label for="email">Email:</label>
-              <input type="email" id="email"
-                placeholder="Ingrese su correo electronico" required />
+              <input type="email" id="email" placeholder="Ingrese su correo electronico" required />
             </div>
             <!--  -->
             <div class="form__control">
@@ -301,280 +290,279 @@
               <input type="file" id="img" required />
             </div>
             <!--  -->
-            <div class="form__contol">
-              <label for="lugar">Ciudades:</label>
+            <div class="form__control">
+              <label for="lugar">Lugares:</label>
               <select name="ciudades" id="lugar" required>
-                <option value="bariloche">San Carlos de Bariloche</option>
-                <option value="villaLaAngostura">Villa La Angostura</option>
-                <option value="sanMartinDeLosAndes">
-                  San Martin de Los Andes
-                </option>
-                <option value="villaTraful">Villa Traful</option>
-                <option value="elChalten">El Chalten</option>
-                <option value="elCalafate">El Calafate</option>
+                <option value="seleccionar">Seleccionar</option>
+                <option value="bariloche">Parque Nacional Nahuel Huapi</option>
+                <option value="villaLaAngostura">Parque Nacional Lago Puelo</option>
+                <option value="sanMartinDeLosAndes">Parque Nacional Lanin</option>
+                <option value="villaTraful">Parque Nacional Los Alerces</option>
+                <option value="elChalten">Parque Nacional Los Arrayanes</option>
+                <option value="elCalafate">Parque Provincial Copahue</option>
               </select>
             </div>
-            <!--  -->
+          </div>
+          <!-- right -->
+          <div class="rigth">
             <div class="form__control">
               <label for="comentarios">Comentarios:</label>
-              <textarea name="comentarios" id="comentarios" cols="30"
-                rows="10"></textarea>
+              <textarea name="comentarios" id="comentarios" cols="30" rows="6"></textarea>
             </div>
             <!--  -->
             <div class="form__control checkbox">
               <label for="terminos">Acepto Terminos y Condiciones:</label>
               <input type="checkbox" id="terminos" required />
             </div>
+            <input type="submit" value="Enviar" class="form__button"/>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <section class="footer__logo">
+        <img src="./images/logotipo.png" alt="logotipo" />
+      </section>
+      <section class="footer__redes">
+        <ul>
+          <li>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__news">
+        <div>
+          <h4>Newsletter</h4>
+          <form action="#">
+            <input type="email" placeholder="Email" />
             <input type="submit" value="Enviar" />
           </form>
         </div>
       </section>
-    </main>
+    </div>
+    <section class="copyright">
+      <p>2024 Proyecto Integrador | copyright </p>
+    </section>
+  </footer>
+   <!--Ventana Modal-->
+   <div id="modal1"><input type="checkbox" id="btn-modal1">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Nacional Nahuel Huapi</h2>
+          <p>El Parque Nacional Nahuel Huapi es el más antiguo del país y el
+            segundo más grande. Sus más de 700 mil hectáreas repartidas entre
+            las provincias de Río Negro y Neuquén, invitan a descubrir lagos,
+            ríos, cascadas y senderos por el bosque andinopatagónico, la
+            estepa y la alta montaña.</p>
+          <h3>Para conocer</h3>
+          <p>El Parque Nacional Nahuel Huapi es tan grande que se lo puede
+            recorrer desde las localidades de Bariloche, San Martín de los
+            Andes y Villa La Angostura. Varios caminos vehiculares y una gran
+            red de senderos permiten recorrerlo a pie, en bicicleta o en auto.
+            La mítica Ruta 40 lo atraviesa y pasa por varias de sus
+            localidades principales. Se puede visitar todo el año. La época
+            ideal para disfrutar de las playas y los deportes acuáticos, los
+            trekkings y la bici es de octubre a marzo. Para los deportes y las
+            actividades de nieve, de junio a septiembre. El ingreso es
+            gratuito, excepto en las áreas Mascardi y Puerto Pañuelo.
+            Recomendable para ir en familia.</p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/parquenahuelhuapimodal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal1">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal1" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <div id="modal2">
+    <input type="checkbox" id="btn-modal2">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Nacional Lago Puelo</h2>
+          <p>El Parque Nacional Lago Puelo es uno de los pocos lugares de la
+            Argentina donde se puede ver la selva valdiviana, tan
+            característica de Chile. Sus increíbles paisajes de montañas y
+            bosques son irresistibles para amantes del senderismo, el kayak y
+            la observación de aves.</p>
+          <h3>Para conocer</h3>
+          <p>A sólo 4 km de la localidad de Lago Puelo, esta área protegida
+            debe su nombre a su principal cuerpo de agua: el lago Puelo.
+            Rodeado de bosques puros de pitra y cipreses, se lo puede navegar
+            en excursiones guiadas con kayaks de travesía o lacustres, y a
+            caballo recorriendo su costa y vadeando ríos y arroyos. Muy cerca
+            del lago, hay zonas de picnic con fogones para uso diurno. En la
+            cabecera norte del lago Puelo, “La Playita” es una de las pocas
+            playas de arena de la región. .Se puede visitar todo el año. Para
+            caminar, la mejor época es de octubre a abril.</p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallagopuelo-modal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal2">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal2" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <div id="modal3">
+    <input type="checkbox" id="btn-modal3">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Nacional Lanin</h2>
+          <p>EFamoso por el impactante volcán Lanín que le da nombre, el
+            Parque Nacional Lanín es un gran destino para disfrutar la magia
+            de la Patagonia, acampar, practicar senderismo, deportes de nieve,
+            agua o montaña; o descansar entre paisajes con lagos bien azules,
+            ríos cristalinos y bosques milenarios.</p>
+          <h3>Para conocer</h3>
+          <p>Como el Parque Nacional Lanín es muy grande, una buena forma de
+            descubrirlo es elegir uno de sus sectores y explorarlo. En el
+            norte se destacan los bosques de pehuén o araucaria, donde las
+            comunidades mapuches invitan a conocer sus tradiciones y cultura.
+            La zona central es la puerta de entrada al imponente volcán Lanín
+            y en el sur, San Martín de los Andes ofrece todo tipo de
+            actividades y da comienzo a la famosa Ruta de los Siete Lagos.
+            Varios caminos vehiculares y una gran red de senderos permiten
+            recorrerlo a pie, en bicicleta o en auto. La mítica Ruta 40 lo
+            atraviesa y pasa por varias de sus localidades principales.
+          </p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallanín-modal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal3">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal3" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <div id="modal4">
+    <input type="checkbox" id="btn-modal4">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Nacional Los Alerces</h2>
+          <p>El Parque Nacional Los Alerces es un lugar con una belleza
+            imponente: hay lagos y ríos color turquesa, glaciares, cascadas y
+            el Alerzal Milenario, un sector de selva valdiviana con alerces de
+            más de 2500 años. En 2017 fue declarado Patrimonio Natural Mundial
+            por la UNESCO.</p>
+          <h3>Para conocer</h3>
+          <p>El parque es ideal para acampar, descansar en una cabaña, hacer
+            senderismo, trekking, kayak, paseos lacustres, cabalgatas y
+            disfrutar de la naturaleza en su máxima expresión. Se lo puede
+            visitar por el día pero lo mejor es destinar más tiempo para
+            conocer todo lo que ofrece. La RP 71 lo recorre de norte a sur y
+            bordea sus principales lagos. Se puede visitar todo el año. Para
+            acampar y hacer caminatas, de octubre a abril. De junio a
+            septiembre para esquí y actividades de nieve en La Hoya. Ingreso
+            arancelado. El centro de visitantes y el sendero V. Futalaufquen
+            son accesibles.</p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallosalerces-modal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal4">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal4" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <div id="modal5">
+    <input type="checkbox" id="btn-modal5">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Nacional Los Arrayanes</h2>
+          <p>El Parque Nacional Los Arrayanes es un pequeño parque cercano a
+            Villa La Angostura que invita a descubrir un paisaje único: el
+            famoso bosque de arrayanes. Son árboles que con su corteza color
+            canela y sus troncos retorcidos crean un bosque de particular
+            belleza y un paisaje de ensueño que le valió el apodo de “bosque
+            encantado”.
+          </p>
+          <h3>Para conocer</h3>
+          <p>El parque se extiende por la península de Quetrihué, sobre el
+            lago Nahuel Huapi. Un sendero principal de 12 km lo recorre hasta
+            su extremo sur, donde el protagonismo de los arrayanes es mayor.
+            En el camino se pasa por los miradores de las bahías Mansa y
+            Brava, los brazos del lago y el acceso a la laguna Patagua. Además
+            de a pie, es muy habitual recorrer esta senda en bicicleta. Es un
+            hermoso paseo para realizar en el día. Se puede visitar todo el
+            año. De mayo a septiembre los horarios y
+            actividades pueden estar acotados. Recomendable para ir en
+            familia. Ingreso arancelado.
+          </p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallosarrayanes-modal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal5">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal5" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <div id="modal6">
+    <input type="checkbox" id="btn-modal6">
+    <div class="container-modal">
+      <div class="content-modal">
+        <div class="encabezado-modal">
+          <h2>Parque Provincial Copahue</h2>
+          <p>En medio de un paisaje de montañas cubiertas de pehuenes
+            milenarios, el Parque Provincial Copahue en el oeste neuquino,
+            protege varios atractivos que forman parte de la Ruta del Pehuén,
+            un circuito por una región sorprendente, con el volcán Copahue y
+            sus termas como protagonistas.
+          </p>
+          <h3>Para conocer</h3>
+          <p>Un paisaje imposible de imaginar: tenés que verlo. Está a unos 10
+            km de Caviahue y es un espectacular exponente de la fuerza erosiva
+            del agua, en el que se aprecia la caída completa del río a una
+            colorida hondonada (por los abundantes minerales) de 45 metros. En
+            invierno, Caviahue se convierte en centro de esquí y es ideal para
+            caminar con raquetas o pasear en motos de nieve en los bosques de
+            araucarias.
+            El lago Caviahue es excelente para la fotografía de naturaleza,
+            junto con las múltiples formaciones de roca volcánica de
+            caprichosas siluetas entre araucarias de hasta 30 metros de
+            altura. Para trekkings y baños termales, viajar de octubre a abril. De junio a septiembre para esquí y
+            actividades de nieve.</p>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parqueprovincialcopahue-modal.jpg" alt>
+        </div>
+        <div class="btn-cerrar">
+          <label for="btn-modal6">Cerrar</label>
+        </div>
+      </div>
+      <label for="btn-modal6" class="cerrar-modal"></label>
+    </div>
+  </div>
+  <!--Fin de Ventana Modal-->
 
-    <footer>
-      <div class="footer__container">
-        <section class="footer__logo">
-          <img src="./images/logotipo.png" alt="logotipo" />
-        </section>
-        <section>
-          <div>
-            <ul class="footer__redes">
-              <li>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="bi bi-tiktok"></i></a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="footer__news">
-          <div>
-            <h4>newsletter</h4>
-            <form>
-              <input type="email" placeholder="Email" />
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </section>
-      </div>
-      <section class="copyright">
-        <p>2024 Proyecto Integrador | copyright </p>
-      </section>
-    </footer>
-    <!--Ventana Modal-->
-    <div id="modal1"><input type="checkbox" id="btn-modal1">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Nacional Nahuel Huapi</h2>
-            <p>El Parque Nacional Nahuel Huapi es el más antiguo del país y el
-              segundo más grande. Sus más de 700 mil hectáreas repartidas entre
-              las provincias de Río Negro y Neuquén, invitan a descubrir lagos,
-              ríos, cascadas y senderos por el bosque andinopatagónico, la
-              estepa y la alta montaña.</p>
-            <h3>Para conocer</h3>
-            <p>El Parque Nacional Nahuel Huapi es tan grande que se lo puede
-              recorrer desde las localidades de Bariloche, San Martín de los
-              Andes y Villa La Angostura. Varios caminos vehiculares y una gran
-              red de senderos permiten recorrerlo a pie, en bicicleta o en auto.
-              La mítica Ruta 40 lo atraviesa y pasa por varias de sus
-              localidades principales. Se puede visitar todo el año. La época
-              ideal para disfrutar de las playas y los deportes acuáticos, los
-              trekkings y la bici es de octubre a marzo. Para los deportes y las
-              actividades de nieve, de junio a septiembre. El ingreso es
-              gratuito, excepto en las áreas Mascardi y Puerto Pañuelo.
-              Recomendable para ir en familia.</p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/parquenahuelhuapimodal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal1">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal1" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <div id="modal2">
-      <input type="checkbox" id="btn-modal2">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Nacional Lago Puelo</h2>
-            <p>El Parque Nacional Lago Puelo es uno de los pocos lugares de la
-              Argentina donde se puede ver la selva valdiviana, tan
-              característica de Chile. Sus increíbles paisajes de montañas y
-              bosques son irresistibles para amantes del senderismo, el kayak y
-              la observación de aves.</p>
-            <h3>Para conocer</h3>
-            <p>A sólo 4 km de la localidad de Lago Puelo, esta área protegida
-              debe su nombre a su principal cuerpo de agua: el lago Puelo.
-              Rodeado de bosques puros de pitra y cipreses, se lo puede navegar
-              en excursiones guiadas con kayaks de travesía o lacustres, y a
-              caballo recorriendo su costa y vadeando ríos y arroyos. Muy cerca
-              del lago, hay zonas de picnic con fogones para uso diurno. En la
-              cabecera norte del lago Puelo, “La Playita” es una de las pocas
-              playas de arena de la región. .Se puede visitar todo el año. Para
-              caminar, la mejor época es de octubre a abril.</p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/Parquenacionallagopuelo-modal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal2">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal2" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <div id="modal3">
-      <input type="checkbox" id="btn-modal3">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Nacional Lanin</h2>
-            <p>EFamoso por el impactante volcán Lanín que le da nombre, el
-              Parque Nacional Lanín es un gran destino para disfrutar la magia
-              de la Patagonia, acampar, practicar senderismo, deportes de nieve,
-              agua o montaña; o descansar entre paisajes con lagos bien azules,
-              ríos cristalinos y bosques milenarios.</p>
-            <h3>Para conocer</h3>
-            <p>Como el Parque Nacional Lanín es muy grande, una buena forma de
-              descubrirlo es elegir uno de sus sectores y explorarlo. En el
-              norte se destacan los bosques de pehuén o araucaria, donde las
-              comunidades mapuches invitan a conocer sus tradiciones y cultura.
-              La zona central es la puerta de entrada al imponente volcán Lanín
-              y en el sur, San Martín de los Andes ofrece todo tipo de
-              actividades y da comienzo a la famosa Ruta de los Siete Lagos.
-              Varios caminos vehiculares y una gran red de senderos permiten
-              recorrerlo a pie, en bicicleta o en auto. La mítica Ruta 40 lo
-              atraviesa y pasa por varias de sus localidades principales.
-            </p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/Parquenacionallanín-modal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal3">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal3" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <div id="modal4">
-      <input type="checkbox" id="btn-modal4">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Nacional Los Alerces</h2>
-            <p>El Parque Nacional Los Alerces es un lugar con una belleza
-              imponente: hay lagos y ríos color turquesa, glaciares, cascadas y
-              el Alerzal Milenario, un sector de selva valdiviana con alerces de
-              más de 2500 años. En 2017 fue declarado Patrimonio Natural Mundial
-              por la UNESCO.</p>
-            <h3>Para conocer</h3>
-            <p>El parque es ideal para acampar, descansar en una cabaña, hacer
-              senderismo, trekking, kayak, paseos lacustres, cabalgatas y
-              disfrutar de la naturaleza en su máxima expresión. Se lo puede
-              visitar por el día pero lo mejor es destinar más tiempo para
-              conocer todo lo que ofrece. La RP 71 lo recorre de norte a sur y
-              bordea sus principales lagos. Se puede visitar todo el año. Para
-              acampar y hacer caminatas, de octubre a abril. De junio a
-              septiembre para esquí y actividades de nieve en La Hoya. Ingreso
-              arancelado. El centro de visitantes y el sendero V. Futalaufquen
-              son accesibles.</p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/Parquenacionallosalerces-modal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal4">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal4" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <div id="modal5">
-      <input type="checkbox" id="btn-modal5">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Nacional Los Arrayanes</h2>
-            <p>El Parque Nacional Los Arrayanes es un pequeño parque cercano a
-              Villa La Angostura que invita a descubrir un paisaje único: el
-              famoso bosque de arrayanes. Son árboles que con su corteza color
-              canela y sus troncos retorcidos crean un bosque de particular
-              belleza y un paisaje de ensueño que le valió el apodo de “bosque
-              encantado”.
-            </p>
-            <h3>Para conocer</h3>
-            <p>El parque se extiende por la península de Quetrihué, sobre el
-              lago Nahuel Huapi. Un sendero principal de 12 km lo recorre hasta
-              su extremo sur, donde el protagonismo de los arrayanes es mayor.
-              En el camino se pasa por los miradores de las bahías Mansa y
-              Brava, los brazos del lago y el acceso a la laguna Patagua. Además
-              de a pie, es muy habitual recorrer esta senda en bicicleta. Es un
-              hermoso paseo para realizar en el día. Se puede visitar todo el
-              año. De mayo a septiembre los horarios y
-              actividades pueden estar acotados. Recomendable para ir en
-              familia. Ingreso arancelado.
-            </p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/Parquenacionallosarrayanes-modal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal5">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal5" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <div id="modal6">
-      <input type="checkbox" id="btn-modal6">
-      <div class="container-modal">
-        <div class="content-modal">
-          <div class="encabezado-modal">
-            <h2>Parque Provincial Copahue</h2>
-            <p>En medio de un paisaje de montañas cubiertas de pehuenes
-              milenarios, el Parque Provincial Copahue en el oeste neuquino,
-              protege varios atractivos que forman parte de la Ruta del Pehuén,
-              un circuito por una región sorprendente, con el volcán Copahue y
-              sus termas como protagonistas.
-            </p>
-            <h3>Para conocer</h3>
-            <p>Un paisaje imposible de imaginar: tenés que verlo. Está a unos 10
-              km de Caviahue y es un espectacular exponente de la fuerza erosiva
-              del agua, en el que se aprecia la caída completa del río a una
-              colorida hondonada (por los abundantes minerales) de 45 metros. En
-              invierno, Caviahue se convierte en centro de esquí y es ideal para
-              caminar con raquetas o pasear en motos de nieve en los bosques de
-              araucarias.
-              El lago Caviahue es excelente para la fotografía de naturaleza,
-              junto con las múltiples formaciones de roca volcánica de
-              caprichosas siluetas entre araucarias de hasta 30 metros de
-              altura. Para trekkings y baños termales, viajar de octubre a abril. De junio a septiembre para esquí y
-              actividades de nieve.</p>
-          </div>
-          <div class="imagen-descripcion-modal">
-            <img src="./images/modales/Parqueprovincialcopahue-modal.jpg" alt>
-          </div>
-          <div class="btn-cerrar">
-            <label for="btn-modal6">Cerrar</label>
-          </div>
-        </div>
-        <label for="btn-modal6" class="cerrar-modal"></label>
-      </div>
-    </div>
-    <!--Fin de Ventana Modal-->
-
-    <script src="./js/index.js"></script>
-  </body>
+  <script src="./js/index.js"></script>
+</body>
 </html>
