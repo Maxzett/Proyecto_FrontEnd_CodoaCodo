@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -270,27 +269,30 @@
         <h2>Formulario Contacto</h2>
       </div>
       <div class="contacto__container">
-        <form action="#">
+        <form action="#" id="formulario" method="post">
           <div class="left">
             <div class="form__control">
               <label for="nombre">Nombre y Apellido:</label>
-              <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required />
+              <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido"  />
+              <span id="errorNombre" class="error"></span>
             </div>
             <!--  -->
             <div class="form__control">
               <label for="email">Email:</label>
-              <input type="email" id="email" placeholder="Ingrese su correo electronico" required />
+              <input type="email" id="email" placeholder="Ingrese su correo electronico"  />
+              <span id="errorEmail" class="error"></span>
             </div>
             <!--  -->
             <div class="form__control">
               <label for="img">Foto de Perfil:</label>
-              <input type="file" id="img" required />
+              <input type="file" id="img"  />
+              <span id="errorImg" class="error"></span>
             </div>
             <!--  -->
             <div class="form__control">
               <label for="lugar">Lugares:</label>
-              <select name="ciudades" id="lugar" required>
-                <option value="seleccionar">Seleccionar</option>
+              <select name="ciudades" id="lugar" >
+                <option value="seleccionar" >Seleccionar</option>
                 <option value="bariloche">Parque Nacional Nahuel Huapi</option>
                 <option value="villaLaAngostura">Parque Nacional Lago Puelo</option>
                 <option value="sanMartinDeLosAndes">Parque Nacional Lanin</option>
@@ -298,6 +300,7 @@
                 <option value="elChalten">Parque Nacional Los Arrayanes</option>
                 <option value="elCalafate">Parque Provincial Copahue</option>
               </select>
+              <span id="errorLugar" class="error"></span>
             </div>
           </div>
           <!-- right -->
@@ -309,7 +312,8 @@
             <!--  -->
             <div class="form__control checkbox">
               <label for="terminos">Acepto Terminos y Condiciones:</label>
-              <input type="checkbox" id="terminos" required />
+              <input type="checkbox" id="terminos"  />
+              <span id="errorTerminos" class="error"></span>
             </div>
             <input type="submit" value="Enviar" class="form__button"/>
           </div>
