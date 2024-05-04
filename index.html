@@ -317,11 +317,61 @@
             </div>
             <input type="submit" value="Enviar" class="form__button"/>
           </div>
+        <form id="formulario" action="#" method="POST">
+          <div class="left">
+          <div class="form__control">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido"/>
+            <div id="errorNombre" class="error"></div>
+          </div>
+        
+          <div class="form__control">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Ingrese su correo electrónico"/>
+            <div id="errorEmail" class="error"></div>
+          </div>
+        
+          <div class="form__control">
+            <label for="img">Foto de Perfil:</label>
+            <input type="file" id="img"  />
+            <div id="errorImg" class="error"></div>
+          </div>
+        
+          <div class="form__control">
+            <label for="lugar">Ciudades:</label>
+            <select name="ciudades" id="lugar" >
+              <option value="">Seleccione una ciudad</option>
+              <option value="bariloche">San Carlos de Bariloche</option>
+              <option value="villaLaAngostura">Villa La Angostura</option>
+              <option value="sanMartinDeLosAndes">San Martin de Los Andes</option>
+              <option value="villaTraful">Villa Traful</option>
+              <option value="elChalten">El Chalten</option>
+              <option value="elCalafate">El Calafate</option>
+            </select>
+            <div id="errorLugar" class="error"></div>
+          </div>
+        </div>
+          <!-- right -->
+          <div class="rigth">
+          <div class="form__control">
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            <div id="errorComentarios" class="error"></div>
+          </div>
+        
+          <div class="form__control">
+            <label for="terminos">Acepto Términos y Condiciones:</label>
+            <input type="checkbox" id="terminos"/>
+            <div id="errorTerminos" class="error"></div>
+            
+            <input type="submit" value="Enviar" id="Enviar" />
+          </div>
+        </div>
         </form>
+        
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer__container">
       <section class="footer__logo">
@@ -564,6 +614,8 @@
   </div>
   <!--Fin de Ventana Modal-->
 
+  <script src="./js/formulario.js"></script>
   <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
 </html>
