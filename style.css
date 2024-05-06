@@ -136,6 +136,7 @@ a:visited {
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
 }
 .actividades__title{
     padding: 2rem;
@@ -168,71 +169,66 @@ a:visited {
 .section__actividades .container .box{
     background-color: burlywood;
     transition: 0.5s;
-}
-.section__actividades .container .box:hover{
-    background-color: #606c38;
-}
-.box1{
-    background: url(./images/actividades/toninasoveras.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    
 }
-.box2{
-    background: url(./images/actividades/bosquearaucarias.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
+.contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: end;
-}
-.box3{
-    background: url(./images/actividades/acamparenparques.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;
-    display: flex;
-    align-items: end;
-}
-.box4{
-    background: url(./images/actividades/montañismoyescalada.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:unset;
-    display: flex;
-    align-items: end;
-}
-.box5{
-    background: url(./images/actividades/senderismolagopuelo.jpg); 
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:0;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    align-content: center;
 }
-.box6{
-    background: url(./images/actividades/remarenlagospatagonicos.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:bottom;
-    display: flex;
-    align-items:start;
+.contenedor figure{
+    width: 100%;
+    height: 100%;
+    display: flex; 
 }
-.box7{
-    background: url(./images/actividades/avesparquearrayanes.jpg); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    display: flex;
-    align-items:start;
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
 }
-.texto_actividad{
-    background-color: #ffffff76;
-    padding: 0.5rem;
-    text-align: justify;
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(95, 158, 160, 0.678);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+   
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    padding-top: 1rem;
+}
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    transition: all 400ms ease-out;
+    font-size: 1.5rem;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 25rem;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
 }
 .section__actividades .container .box:nth-child(1){
     grid-column: span 2;
@@ -245,12 +241,37 @@ a:visited {
 .section__actividades .container .box:nth-child(4){
     grid-column: span 1;
     grid-row: span 2;
+    max-height: 30rem;
 }
 .section__actividades .container .box:nth-child(5){
     grid-column: span 3;
     grid-row: span 1;
+    max-height: 13rem;
 }
-@media (max-width:990px) {
+    .section__actividades .container .box{
+        display: flex;
+        width: 100%;
+    
+}
+@media only screen and (min-width: 1050px) and (max-width: 1260px){
+    .section__actividades .container .box:nth-child(4){
+        grid-column: span 1;
+        grid-row: span 2;
+        max-height: 40rem;
+    }
+}
+    @media (max-width:990px) {
+    .section__actividades .container{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .section__actividades .container .box{
+        display: flex;
+        width: 100%;
+        max-height: 25rem;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 576px){
     .section__actividades .container{
         display: flex;
         flex-wrap: wrap;    
@@ -259,13 +280,29 @@ a:visited {
         display: flex;
         width: 100%;
     }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        transition: all 400ms ease-out;
+        font-size: 0.9rem;
+    
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 20rem;
+        margin: auto;
+        text-align: justify;
+    }
 }
 
 
 /*destinos */
 .destinos{
     background-color: #ffddd2;
-    padding: 2rem;
+    padding:4rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,7 +419,7 @@ a:visited {
     background: url(./images/fondo-nosotros.jpg);
     background-size: cover;
     height: 100vh;
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     
 }
 .nosotros__section{
