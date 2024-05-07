@@ -67,3 +67,41 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
       this.submit();
     }
   });
+
+  //--------------galeria//
+
+  // URL del archivo JSON con los enlaces a las imágenes
+const jsonUrl = './js/fotos.json';
+
+// Función para cargar el archivo JSON
+function cargarImagenes() {
+    fetch(jsonUrl)
+        .then(response => response.json())
+        .then(data => {
+            const galeriaElement = document.getElementById('galeria');
+            let imageGroup = document.createElement('div');
+            imageGroup.classList.add('image-group');
+
+            data.forEach((image, index) => {
+                if (index % 4 === 0 && index !== 0) {
+                    galeriaElement.appendChild(imageGroup);
+                    imageGroup = document.createElement('div');
+                    imageGroup.classList.add('image-group');
+                }
+
+                const imgElement = document.createElement('img');
+                imgElement.src = image.url;
+                imgElement.alt = `Imagen ${image.id}`;
+                imgElement.classList.add('image-item');
+                imageGroup.appendChild(imgElement);
+            });
+
+            galeriaElement.appendChild(imageGroup);
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo JSON:', error);
+        });
+}
+
+// Llamar a la función para cargar las imágenes
+cargarImagenes();

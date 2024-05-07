@@ -441,7 +441,7 @@ a:visited {
 }
 @media (max-width:525px){
     .nosotros{
-       padding: 1rem;
+        padding: 1rem;
     }
     .nosotros__container{
         padding: 0.5rem;
@@ -449,6 +449,41 @@ a:visited {
     /* .nosotros__container p{
         font-size: 0.8rem;
     } */
+}
+/*GALERIA*/
+.galeria {
+    background-color: rgb(139, 137, 138);
+    padding: 1rem;
+}
+
+.image-group {
+    background-color: rgb(139, 137, 138);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.image-item {
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .image-group {
+        flex-direction: column;
+    }
+
+    .image-item {
+        width: 100%;
+    }
 }
 
 /* formulario contacto */
