@@ -64,7 +64,7 @@ a:visited {
     background-color: rgb(113, 192, 195);
   }
 
-@media screen and (max-width: 700px){
+@media (max-width: 730px){
     .abrir__menu, .cerrar__menu{
         display: block;
         border: 0;
@@ -77,17 +77,24 @@ a:visited {
     .navbar__links__container{
         opacity: 0;
         visibility: hidden;
-
+        
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
         gap: 1rem;
         position: absolute;
-        top: 0;
+        top: 4rem;
+        left: 0;
         right: 0;
-        padding: 2rem;
+        width: 100vw;
+        padding: 1rem;
         background-color: #1c1c1c;
         box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    }
+    .navbar__links__container .cerrar__menu{
+        position: absolute;
+        right: 3rem;
+        top: .5rem;
     }
     /* agregrar Js */
     .navbar__links__container.visible{
@@ -96,7 +103,7 @@ a:visited {
     }
     .navbar__links{
         flex-direction: column;
-        align-items: end;
+        align-items: center;
     }
 }
 /* header */
@@ -139,7 +146,7 @@ a:visited {
     padding-top: 2rem;
 }
 .actividades__title{
-    padding: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 .actividades__title h2{
@@ -418,7 +425,7 @@ a:visited {
 .nosotros{
     background: url(./images/fondo-nosotros.jpg);
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 4rem;
     display: flex;
 }
@@ -426,6 +433,7 @@ a:visited {
     display: flex;
     align-items: center;
     max-width: 600px;
+    padding-top: 2rem;
 }
 .nosotros__container{
     background: rgba(255,255,255,.7);
