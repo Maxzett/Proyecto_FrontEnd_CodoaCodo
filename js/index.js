@@ -105,3 +105,7 @@ function cargarImagenes() {
 
 // Llamar a la función para cargar las imágenes
 cargarImagenes();
+
+
+
+//----------------
