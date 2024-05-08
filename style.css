@@ -224,12 +224,12 @@ a:visited {
     color: #fff;
     font-weight: 400;
     transition: all 400ms ease-out;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .contenedor figure .capa p{
     color: #fff;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.2;
     width: 100%;
     max-width: 25rem;
     margin: auto;
@@ -248,7 +248,7 @@ a:visited {
 .section__actividades .container .box:nth-child(4){
     grid-column: span 1;
     grid-row: span 2;
-    max-height: 30rem;
+    max-height: 34rem;
 }
 .section__actividades .container .box:nth-child(5){
     grid-column: span 3;
@@ -260,11 +260,28 @@ a:visited {
         width: 100%;
     
 }
-@media only screen and (min-width: 1050px) and (max-width: 1260px){
+@media only screen and (min-width: 990px) and (max-width: 1260px){
     .section__actividades .container .box:nth-child(4){
         grid-column: span 1;
         grid-row: span 2;
         max-height: 40rem;
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        transition: all 400ms ease-out;
+        font-size: 1.2rem;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        width: 100%;
+        max-width: 25rem;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align:center;
     }
 }
     @media (max-width:990px) {
@@ -276,6 +293,23 @@ a:visited {
         display: flex;
         width: 100%;
         max-height: 25rem;
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        transition: all 400ms ease-out;
+        font-size: 1.2rem;
+    }
+    .contenedor figure .capa p{
+        color: #fff;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 25rem;
+        margin: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 576px){
@@ -297,11 +331,11 @@ a:visited {
     .contenedor figure .capa p{
         color: #fff;
         font-size: 0.8rem;
-        line-height: 1.5;
+        line-height: 1.2;
         width: 100%;
-        max-width: 20rem;
+        max-width: 21rem;
         margin: auto;
-        text-align: justify;
+        text-align: center;
     }
 }
 
@@ -718,7 +752,7 @@ form .left , .rigth{
     background-color: #ffddd2;
     border-radius: 4px;
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 560px 50px 580px;
     overflow: hidden;   
 }
 .content-modal .encabezado-modal{
@@ -729,7 +763,7 @@ form .left , .rigth{
    position: relative;
 }
 .content-modal h2{
-    padding: 0.5rem;
+    padding: 0rem;
 }
 .content-modal h3{
     padding: 0.5rem;   
@@ -741,11 +775,12 @@ form .left , .rigth{
     border-bottom: 1px solid #ffffff;
 }
 .content-modal img{
-    max-width: 800px;
+    max-width: 700px;
     position: absolute;   
 }
 .content-modal .btn-cerrar{
     width: 100%;
+    height: 4rem;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -753,12 +788,14 @@ form .left , .rigth{
 }
 .content-modal .btn-cerrar label{
     padding: 7px 10px;
-    background: white;
-    color: black;
+   color: black;
     border-radius: 4px;
     cursor: pointer;
     transition: all 300ms ease;
-    margin-bottom: 2rem;
+    margin-bottom: 1.9rem;
+}
+.fa-solid {
+    color: black;
 }
 .content-modal .btn-cerrar label:hover{
     background:#e29578;
@@ -771,35 +808,7 @@ form .left , .rigth{
     top:0; left: 0;
     z-index: -1;
 }
-@media (max-width:990px) {
-    .container-modal{
-        width: 100%;
-    }
-    .content-modal{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        overflow-y: scroll; 
-    }
-    #btn-modal1{
-        display: none;
-    }
-    #btn-modal2{
-        display: none;
-    }
-    #btn-modal3{
-        display: none;
-    }
-    #btn-modal4{
-        display: none;
-    }
-    #btn-modal5{
-        display: none;
-    }
-    #btn-modal6{
-        display: none;
-    }
+@media (max-width:1190px) {
     .container-modal{
         width: 100%;
         height: 100vh;
@@ -811,32 +820,14 @@ form .left , .rigth{
         align-items: center;
         z-index: 100;
     }
-    #btn-modal1:checked ~ .container-modal{
-        display: flex;
-    }
-    #btn-modal2:checked ~ .container-modal{
-        display: flex;
-    }
-    #btn-modal3:checked ~ .container-modal{
-        display: flex;
-    }
-    #btn-modal4:checked ~ .container-modal{
-        display: flex;
-    }
-    #btn-modal5:checked ~ .container-modal{
-        display: flex;
-    }
-    #btn-modal6:checked ~ .container-modal{
-        display: flex;
-    }
     .content-modal{
         width: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         background-color: #ffddd2;
         border-radius: 4px;
         display: grid;
-        grid-template-columns: 600px 600px;
-        overflow: hidden;   
+        grid-template-columns: 475px 50px 475px;
+        overflow: hidden;  
     }
     .content-modal .encabezado-modal{
         margin-top: 2rem;
@@ -847,22 +838,25 @@ form .left , .rigth{
     }
     .content-modal h2{
         padding: 0.5rem;
+        font-size: 1.2rem;
     }
     .content-modal h3{
-        padding: 0.5rem;   
+        padding: 0.5rem;
+        font-size: 1rem;   
     }
     .content-modal p{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding: 0.5rem;
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid #ffffff;
     }
     .content-modal img{
-        max-width: 800px;
+        max-width: 600px;
         position: absolute;   
     }
     .content-modal .btn-cerrar{
         width: 100%;
+        height: 4rem;
         margin-top: 10px;
         margin-bottom: 10px;
         display: flex;
@@ -870,17 +864,186 @@ form .left , .rigth{
     }
     .content-modal .btn-cerrar label{
         padding: 7px 10px;
-        background: white;
-        color: black;
+       color: black;
         border-radius: 4px;
         cursor: pointer;
         transition: all 300ms ease;
-        margin-bottom: 2rem;
+        margin-bottom: 1.9rem;
+    }
+    .fa-solid {
+        color: black;
     }
     .content-modal .btn-cerrar label:hover{
         background:#e29578;
         color: black;
     }
+    .cerrar-modal{
+        width:100%;
+        height: 100vh;
+        position: absolute;
+        top:0; left: 0;
+        z-index: -1;
+    }
+}
+@media only screen and (min-width:680px) and (max-width:1018px ) {
+    .container-modal{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .content-modal{
+        width: 100%;
+        max-width: 500px;
+        background-color: #ffddd2;
+        border-radius: 4px;
+        display: grid;
+        grid-template-columns: 450px 50px;
+        grid-template-rows: 330px 280px;
+        overflow: hidden;   
+    }
+    .content-modal .encabezado-modal{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .content-modal .imagen-descripcion-modal{
+       position: relative;
+    }
+    .content-modal h2{
+        padding: 0.2rem;
+        font-size: 1.2rem;
+    }
+    .content-modal h3{
+        padding: 0.5rem; 
+        font-size: 1rem;  
+    }
+    .content-modal p{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+    .content-modal img{
+        max-width: 500px;
+        position: absolute;
+        padding: 0;
+        align-content: center;
+        align-items:baseline;  
+    }
+    .content-modal .btn-cerrar{
+        width: 100%;
+        height: 4rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content:center;
+    }
+    .content-modal .btn-cerrar label{
+        padding: 7px 10px;
+       color: black;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+        margin-bottom: 1.9rem;
+    }
+    .fa-solid {
+        color: black;
+    }
+    .content-modal .btn-cerrar label:hover{
+        background:#e29578;
+        color: black;
+    }
+    .cerrar-modal{
+        width:100%;
+        height: 100vh;
+        position: absolute;
+        top:0; left: 0;
+    }  
+}
+@media (max-width:680px ) {
+    .container-modal{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        margin: 0;
+    }
+    
+    .content-modal{
+        width: 100%;
+        max-width: 350px;
+        background-color: #ffddd2;
+        border-radius: 4px;
+        display: grid;
+        grid-template-columns: 310px 40px;
+        grid-template-rows: 300px 260px;
+        overflow: hidden; 
+        margin-top: 0; 
+        
+    }
+    .content-modal .encabezado-modal{
+        margin-top: 0.5rem;
+        padding: 1rem;
+    }
+    .content-modal .imagen-descripcion-modal{
+       position: relative;
+    }
+    .content-modal h2{
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    .content-modal h3{
+        padding: 0.3rem; 
+        font-size: 0.8rem;  
+    }
+    .content-modal p{
+        font-size: 0.6rem;
+        padding: 0.3rem;
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+    .content-modal img{
+        max-width: 440px;
+        position: absolute;
+        padding: 0;
+        align-content: center;
+        align-items:baseline;
+         
+    }
+    .content-modal .btn-cerrar{
+        width: 100%;
+        height: 4rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content:center;
+    }
+    .content-modal .btn-cerrar label{
+        padding: 7px 7px;
+       color: black;
+        cursor: pointer;
+        transition: all 300ms ease;
+        margin-bottom: 1.9rem;
+    }
+    .fa-solid {
+        color: black;
+    
+    }
+    .content-modal .btn-cerrar label:hover{
+        background:#e29578;
+        color: black;
+    }
+    
     .cerrar-modal{
         width:100%;
         height: 100vh;
