@@ -485,6 +485,18 @@ a:visited {
     width: 100%;
     border-radius: 10px;
 }
+@media screen and (max-width: 900px) {
+    .image-group {
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .image-item {
+        width: 48%; 
+        margin-bottom: 20px; 
+    }
+}
+
 
 @media screen and (max-width: 650px) {
     .image-group {
