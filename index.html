@@ -282,11 +282,21 @@
         </div>
       </div>
     </section>
-<section class="galeria">
-  <div class="gallery" id="galeria">
-  <div class="contacto__title">
-    <h2>galeria</h2>
-  </div>
+<section id="galeria">
+  <div id="app" class="galeria">
+    <div v-if="error">Error al cargar los datos</div>
+    <div class="galeria__title">
+      <h2 class="galeria">GALERIA</h2>
+    </div>
+    <div v-else class="image-group">
+        <div v-for="imagen in datosPaginados" :key="imagen.id" class="image-item">
+            <img :src="imagen.url" alt="imagen">
+        </div>
+    </div>
+    <div id="botonesContainer">
+        <button type="button" id="prevPagina" @click="paginaAnterior">Anterior</button>
+        <button type="button" id="proximaPagina" @click="paginaSiguiente">Siguiente</button>
+    </div>
 </div>
 </section>
     <section class="contacto" id="contacto">
@@ -595,7 +605,7 @@
     </div>
   </div>
   <!--Fin de Ventana Modal-->
-
+  <script src="https://unpkg.com/vue@3"></script>
   <script src="./js/index.js"></script>
   <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
