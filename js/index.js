@@ -212,3 +212,23 @@ createApp({
         this.fetchData(this.url);
     }
 }).mount('#app');
+
+
+//FORMULARIO NEWSLETTERE
+
+// Obtener el elemento del formulario y el campo de correo electrónico
+    const form = document.getElementById('newsletterForm');
+    const emailInput = document.getElementById('emailInput');
+
+  // Agregar un evento de "submit" al formulario
+    form.addEventListener('submit', function(event) {
+    if (!validateEmail(emailInput.value)) {
+        event.preventDefault();
+        alert('Por favor, ingresa un correo electrónico válido.');
+    }
+    });
+// Función para validar el formato del correo electrónico
+    function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+    }
