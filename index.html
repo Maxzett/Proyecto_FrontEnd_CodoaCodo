@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -29,6 +30,7 @@
           <li><a href="#actividades">ACTIVIDADES</a></li>
           <li><a href="#destinos">DESTINOS</a></li>
           <li><a href="#nosotros">NOSOTROS</a></li>
+          <li><a href="#galeria">GALERIA</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </div>
@@ -41,121 +43,141 @@
         <div class="section__header__text">
           <h1>TURISMO Y AVENTURA</h1>
           <p>Vivi la naturaleza Argentina</p>
-          <button><a href="#destinos">DESTINOS</a></button>
+          <div class="boton_section_header">
+            <a href="#destinos">DESTINOS</a>
+        </div>
         </div>
       </div>
     </section>
   </header>
 
   <main>
-    <div class="actividades" id="actividades">
-      <div class="actividades__title">
-        <h2>Actividades</h2>
-        <p>Viví algunas de las experiencias más hermosas que te regala la
-          naturaleza.</p>
-      </div>
-      <section class="section__actividades">
-        <div class="container">
-          <div class="box box1">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Navegá con los delfines más lindos del mundo</h3>
-                <p>En las costas de Santa Cruz y Chubut animate a ir en busca
-                  de las toninas overas, también conocidas como delfines
-                  patagónicos.
-                  En Puerto Deseado (Santa Cruz) y en Rawson (Chubut) parten
-                  excursiones embarcadas para vivir la adrenalina y la emoción
-                  de verlas de cerca. ¡Son muy curiosas y les gusta jugar
-                  cerca de los barcos!
-                  <br>Dónde: en Puerto Deseado e Isla Pingüino (Santa Cruz) y
-                  en Rawson (Chubut).
-                  <br>Cuándo: de septiembre a marzo. </p>
-              </div>
-            </div>
-          </div>
-          <div class="box box2">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Recorré un bosque prehistórico</h3>
-                <p>En el oeste de Neuquén podés conocer el increíble bosque de
-                  pehuenes o araucarias, árboles que casi no cambiaron desde
-                  la época de los dinosaurios y que las comunidades mapuches
-                  consideran sagrados. Entre lagos y montañas, y a los pies
-                  del volcán Lanín, estos bosques crean un paisaje hermoso que
-                  podés recorrer en auto, en bici o a pie.
-                  <br>Dónde En el Parque Nacional Lanín (Neuquén) y zonas
-                  cercanas.
-                  <br>Cuándo de octubre a abril. </p>
-              </div>
-            </div>
-          </div>
-          <div class="box box3">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Recorré un bosque prehistórico</h3>
-                <p>Despertate frente a un lago o un río, escuchá los mil
-                  sonidos del bosque, respirá el aire más puro, contemplá
-                  montañas con nieves eternas y disfrutá de lo simple mientras
-                  visitás algunas de las áreas protegidas más hermosas de
-                  Argentina.
-                  <br>Dónde: en los parques nacionales Lanín (Neuquén), Nahuel
-                  Huapi (Neuquén y Río Negro), Lago Puelo y Los Alerces
-                  (Chubut) y el Área Protegida Río Azul - Lago Escondido (Río
-                  Negro).
-                  <br>Cuándo de octubre a abril. </p>
-              </div>
-            </div>
-          </div>
-          <div class="box box4">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Montañismo y escalada</h3>
-                <p>En Neuquén te esperan las montañas más altas de la
-                  Patagonia: los volcanes Domuyo, Tromen, Lanín, Copahue, y
-                  cerros como el Corona en la Cordillera del Viento, entre
-                  muchas otras elevaciones.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="box box5">
-            <div class="content">
-              <div class="texto_actividad">
-                <h2>Viví la naturaleza Patagónica</h2>
-              </div>
-            </div>
-          </div>
-          <div class="box box6">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Remá los lagos de la Patagonia</h3>
-                <p>Subite a un kayak y remá los lagos más lindos del sur.
-                  Llegá hasta lugares a los que solo se accede desde el agua
-                  dentro. Alcanzá a ver el fondo de los lagos. Contemplá cómo
-                  los colores cambian según los reflejos del sol y maravillate
-                  con los bosques.
-                  <br>Dónde: en todos los lagos del Parque Nacional Lanín
-                  (Neuquén), Nahuel Huapi (Neuquén y Río Negro)
-                  <br>Cuándo: de septiembre a abril </p>
-              </div>
-            </div>
-          </div>
-          <div class="box box7">
-            <div class="content">
-              <div class="texto_actividad">
-                <h3>Observación de aves</h3>
-                <p>Pegado a Villa La Angostura, este parque nacional es ideal
-                  para recorrer un paisaje único en busca de aves del bosque
-                  andino patagónico como el rayadito, el picolezna patagónico,
-                  las cachañas, el picaflor rubí, el comesebo y la remolinera
-                  araucana.
-                  <br>Dónde: Parque nacional Los Arrayanes (Neuquén)
-                </p>
-              </div>
-            </div>
-          </div>
+    <div class="actividades_container" id="actividades_container">
+      <div class="actividades" id="actividades">
+        <div class="actividades__title">
+          <h2>Actividades</h2>
+          <p>Viví algunas de las experiencias más hermosas que te regala la
+            naturaleza.</p>
         </div>
-      </section>
+        <section class="section__actividades">
+          <div class="container">
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/toninasoveras.jpg" alt="imagen de toninas patagónicas nadando">
+                  <div class="capa">
+                    <h3>Navegá con los delfines más lindos del mundo</h3>
+                    <p>En las costas de Santa Cruz y Chubut animate a ir en
+                      busca
+                      de las toninas overas, también conocidas como delfines
+                      patagónicos.
+                      En Puerto Deseado (Santa Cruz) y en Rawson (Chubut) parten
+                      excursiones embarcadas para vivir la adrenalina y la
+                      emoción
+                      de verlas de cerca. ¡Son muy curiosas y les gusta jugar
+                      cerca de los barcos!
+                      <br>Dónde: en Puerto Deseado e Isla Pingüino (Santa Cruz)
+                      y
+                      en Rawson (Chubut).
+                      <br>Cuándo: de septiembre a marzo. </p>
+
+                  </div>
+                </figure>
+
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/bosquearaucarias.jpg" alt="imagen de árboles de araucaria">
+                  <div class="capa">
+                    <h3>Recorré un bosque prehistórico</h3>
+                    <p>En las costas de Santa Cruz y Chubut animate a ir en
+                      busca de las toninas overas, también conocidas como delfines
+                      patagónicos.
+                      En Puerto Deseado (Santa Cruz) y en Rawson (Chubut) parten
+                      excursiones embarcadas, entre septiembre y marzo, para vivir la adrenalina y la
+                      emoción de verlas de cerca. ¡Son muy curiosas y les gusta jugar
+                      cerca de los barcos!
+                       </p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/acamparenparques.jpg" alt="imagen de una carpa en el bosque">
+                  <div class="capa">
+                    <h3>Acampá en los bosques patagónicos</h3>
+                    <p>Despertate frente a un lago o un río, escuchá los mil
+                      sonidos del bosque, respirá el aire más puro, contemplá
+                      montañas con nieves eternas y disfrutá de lo simple, en los Parques Nacionales Lanín, Nahuel
+                      Huapi, Lago Puelo y el Área Protegida Río Azul - Lago Escondido.
+                      La mejor época de octubre a abril. </p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/montañismoyescalada.jpg" alt="imagen de personas en las montañas">
+                  <div class="capa">
+                    <h3>Montañismo y escalada</h3>
+                    <p>En Neuquén te esperan las montañas más altas de la
+                      Patagonia: los volcanes Domuyo, Tromen, Lanín, Copahue, y
+                      cerros como el Corona en la Cordillera del Viento, entre
+                      muchas otras elevaciones.</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/senderismolagopuelo.jpg" alt="imagen del paisaje de Lago Puelo">
+                  <div class="capa">
+                    <h3>Viví la naturaleza Patagónica</h3>
+                    <p>Entre lagos, bosques y montañas, la Patagonia Andina te espera.</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/remarenlagospatagonicos.jpg" alt="imagen de un kayak en un lago">
+                  <div class="capa">
+                    <h3>Remá los lagos de la Patagonia</h3>
+                    <p>Subite a un kayak y remá los lagos del Parque Nacional Lanín
+                      o del Parque Nahuel Huapi.
+                      Llegá hasta lugares a los que solo se accede desde el agua
+                      dentro. Alcanzá a ver el fondo de los lagos. Contemplá cómo
+                      los colores cambian según los reflejos del sol y maravillate
+                      con los bosques.La mejor época de septiembre a abril.</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <div class="contenedor">
+                <figure>
+                  <img src="./images/actividades/avesparquearrayanes.jpg" alt="imagén de pajaro del Parque arrayanes">
+                  <div class="capa">
+                    <h3>Observación de aves</h3>
+                    <p>Pegado a Villa La Angostura, el Parque nacional Los Arrayanes es ideal
+                      para recorrer un paisaje único en busca de aves del bosque
+                      andino patagónico como el rayadito, el picolezna patagónico,
+                      las cachañas, el picaflor rubí, el comesebo y la remolinera
+                      araucana.</p>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
 
@@ -168,74 +190,80 @@
       <div class="destinos__container">
         <div class="wrapper">
           <div class="card">
-            <img src="./images/destinos/parque-nahuel-huapi.jpg" alt="">
+            <img src="./images/destinos/parque-nahuel-huapi.jpg" alt="Foto del paisaje del Parque Nahuel Huapi">
             <div class="info">
               <h1>Parque Nacional Nahuel Huapi</h1>
               <p>Patagonia Andina</p>
               <p>Neuquen, Rio Negro</p>
               <div class="boton-modal">
-                <button><a href="#modal1"><label for="btn-modal1">Ver
-                      más</label></a></button>
-              </div>
+                <a href="#modal1" class="button"></a>
+                  <div class="boton-card"><label for="btn-modal1">Ver más</label></div>
+                
+               </div>
             </div>
           </div>
           <div class="card">
-            <img src="./images/destinos/parque-lago-puelo.jpg" />
+            <img src="./images/destinos/parque-lago-puelo.jpg" alt="foto del paisaje del Parque Lago Puelo">
             <div class="info">
               <h1>Parque Nacional Lago Puelo</h1>
               <p>Patagonia Andina</p>
               <p>Chubut</p>
               <div class="boton-modal">
-                <button><a href="#modal2"><label for="btn-modal2">Ver
-                      más</label></a></button>
+                <a href="#modal2" class="button"></a>
+                <div class="boton-card"><label for="btn-modal2">Ver más</label></div>
+                
               </div>
             </div>
           </div>
           <div class="card">
-            <img src="./images/destinos/ParqueLanin.jpg" alt="">
+            <img src="./images/destinos/ParqueLanin.jpg" alt="foto del paisaje del Parque Lanin">
             <div class="info">
               <h1>Parque Nacional Lanin</h1>
               <p>Patagonia Andina</p>
               <p>Neuquen</p>
               <div class="boton-modal">
-                <button><a href="#modal3"><label for="btn-modal3">Ver
-                      más</label></a></button>
+                <a href="#modal3" class="button"></a>
+                  <div class="boton-card"><label for="btn-modal3">Ver más</label></div>
+                
               </div>
             </div>
           </div>
           <div class="card">
-            <img src="./images/destinos/parque-los-alerces.jpg" alt="">
+            <img src="./images/destinos/parque-los-alerces.jpg" alt="foto del paisale del Parque Los Alerces">
             <div class="info">
               <h1>Parque Nacional Los Alerces</h1>
               <p>Patagonia Andina</p>
               <p>Chubut</p>
               <div class="boton-modal">
-                <button><a href="#modal4"><label for="btn-modal4">Ver
-                      más</label></a></button>
+                <a href="#modal4" class="button"></a>
+                <div class="boton-card"><label for="btn-modal4">Ver más</label></div>
+                
               </div>
             </div>
           </div>
           <div class="card">
-            <img src="./images/destinos/parque-arrayanes.jpg" alt="">
+            <img src="./images/destinos/parque-arrayanes.jpg" alt="foto del paisaje del Parque Arrayanes">
             <div class="info">
               <h1>Parque Nacional Los Arrayanes</h1>
               <p>Patagonia Andina</p>
               <p>Neuquen</p>
               <div class="boton-modal">
-                <button><a href="#modal5"><label for="btn-modal5">Ver
-                      más</label></a></button>
-              </div>
+                <a href="#modal5" class="button"></a>
+                <div class="boton-card"><label for="btn-modal5">Ver más</label></div>
+                
+                </div>
             </div>
           </div>
           <div class="card">
-            <img src="./images/destinos/parque_copahue.jpg" alt="">
+            <img src="./images/destinos/parque_copahue.jpg" alt="foto del paisaje del Parque Copahue">
             <div class="info">
               <h1>Parque Provincial Copahue</h1>
               <p>Patagonia Andina</p>
               <p>Neuquen</p>
               <div class="boton-modal">
-                <button><a href="#modal6"><label for="btn-modal6">Ver
-                      más</label></a></button>
+                <a href="#modal6" class="button"></a>
+                <div class="boton-card"><label for="btn-modal6">Ver más</label></div>
+                
               </div>
             </div>
           </div>
@@ -262,7 +290,23 @@
         </div>
       </div>
     </section>
-
+<section id="galeria">
+  <div id="app" class="galeria">
+    <div v-if="error">Error al cargar los datos</div>
+    <div class="galeria__title">
+      <h2 class="galeria">GALERIA</h2>
+    </div>
+    <div v-else class="image-group">
+        <div v-for="imagen in datosPaginados" :key="imagen.id" class="image-item">
+            <img :src="imagen.url" alt="imagen">
+        </div>
+    </div>
+    <div id="botonesContainer">
+        <button type="button" id="prevPagina" v-on:click="paginaAnterior">Anterior</button>
+        <button type="button" id="proximaPagina" v-on:click="paginaSiguiente">Siguiente</button>
+    </div>
+</div>
+</section>
     <section class="contacto" id="contacto">
       <div class="contacto__title">
         <h2>Formulario Contacto</h2>
@@ -345,8 +389,8 @@
       <section class="footer__news">
         <div>
           <h4>Newsletter</h4>
-          <form action="#">
-            <input type="email" placeholder="Email" />
+          <form id="newsletterForm">
+            <input type="email" id="emailInput" placeholder="Email" />
             <input type="submit" value="Enviar" />
           </form>
         </div>
@@ -361,6 +405,7 @@
     <div class="container-modal">
       <div class="content-modal">
         <div class="encabezado-modal">
+          
           <h2>Parque Nacional Nahuel Huapi</h2>
           <p>El Parque Nacional Nahuel Huapi es el más antiguo del país y el
             segundo más grande. Sus más de 700 mil hectáreas repartidas entre
@@ -380,12 +425,13 @@
             gratuito, excepto en las áreas Mascardi y Puerto Pañuelo.
             Recomendable para ir en familia.</p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/parquenahuelhuapimodal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal1">Cerrar</label>
+          <label for="btn-modal1"><i class="fa-solid fa-rectangle-xmark"></i></label>
         </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/parquenahuelhuapimodal.jpg" alt="foto del Parque Nahuel Huapi">
+        </div>
+    
       </div>
       <label for="btn-modal1" class="cerrar-modal"></label>
     </div>
@@ -412,12 +458,13 @@
             playas de arena de la región. .Se puede visitar todo el año. Para
             caminar, la mejor época es de octubre a abril.</p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/Parquenacionallagopuelo-modal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal2">Cerrar</label>
+          <label for="btn-modal2"><i class="fa-solid fa-rectangle-xmark"></i></label>
         </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallagopuelo-modal.jpg" alt="foto del Parque Nacional lago Puelo">
+        </div>
+        
       </div>
       <label for="btn-modal2" class="cerrar-modal"></label>
     </div>
@@ -446,12 +493,13 @@
             atraviesa y pasa por varias de sus localidades principales.
           </p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/Parquenacionallanín-modal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal3">Cerrar</label>
+          <label for="btn-modal3"><i class="fa-solid fa-rectangle-xmark"></i></label>
         </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallanín-modal.jpg" alt="Foto del Parque Nacional Lanin">
+        </div>
+        
       </div>
       <label for="btn-modal3" class="cerrar-modal"></label>
     </div>
@@ -479,12 +527,13 @@
             arancelado. El centro de visitantes y el sendero V. Futalaufquen
             son accesibles.</p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/Parquenacionallosalerces-modal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal4">Cerrar</label>
+          <label for="btn-modal4"><i class="fa-solid fa-rectangle-xmark"></i></label>
         </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallosalerces-modal.jpg" alt="Foto del Parque Nacional Los Alerces">
+        </div>
+        
       </div>
       <label for="btn-modal4" class="cerrar-modal"></label>
     </div>
@@ -515,11 +564,11 @@
             familia. Ingreso arancelado.
           </p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/Parquenacionallosarrayanes-modal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal5">Cerrar</label>
+          <label for="btn-modal5"><i class="fa-solid fa-rectangle-xmark"></i></label>
+        </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parquenacionallosarrayanes-modal.jpg" alt="Foto del Parque Nacional Los Arrayanes">
         </div>
       </div>
       <label for="btn-modal5" class="cerrar-modal"></label>
@@ -551,18 +600,19 @@
             altura. Para trekkings y baños termales, viajar de octubre a abril. De junio a septiembre para esquí y
             actividades de nieve.</p>
         </div>
-        <div class="imagen-descripcion-modal">
-          <img src="./images/modales/Parqueprovincialcopahue-modal.jpg" alt>
-        </div>
         <div class="btn-cerrar">
-          <label for="btn-modal6">Cerrar</label>
+          <label for="btn-modal6"><i class="fa-solid fa-rectangle-xmark"></i></label>
         </div>
+        <div class="imagen-descripcion-modal">
+          <img src="./images/modales/Parqueprovincialcopahue-modal.jpg" alt="Foto del Parque Provincial Copahue">
+        </div>
+        
       </div>
       <label for="btn-modal6" class="cerrar-modal"></label>
     </div>
   </div>
   <!--Fin de Ventana Modal-->
-
+  <script src="https://unpkg.com/vue@3"></script>
   <script src="./js/index.js"></script>
   <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
