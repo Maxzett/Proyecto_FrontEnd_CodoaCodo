@@ -30,8 +30,15 @@
           <li><a href="#actividades">ACTIVIDADES</a></li>
           <li><a href="#destinos">DESTINOS</a></li>
           <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="/views/paquetes.html">PAQUETES</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
+          <li><a href="/views/login.html">Login</a></li>
+          <li><a href="/views/registro.html">Registro</a></li>
+
+          <div id="crud">
+            <li><a href="/views/paquete_nuevo.html">Nuevo paquete</a></li>
+            <li><a href="/views/paquete_update.html">Editar paquete</a></li>
+          </div>
         </ul>
       </div>
     </div>
@@ -290,23 +297,7 @@
         </div>
       </div>
     </section>
-<section id="galeria">
-  <div id="app" class="galeria">
-    <div v-if="error">Error al cargar los datos</div>
-    <div class="galeria__title">
-      <h2 class="galeria">GALERIA</h2>
-    </div>
-    <div v-else class="image-group">
-        <div v-for="imagen in datosPaginados" :key="imagen.id" class="image-item">
-            <img :src="imagen.url" alt="imagen">
-        </div>
-    </div>
-    <div id="botonesContainer">
-        <button type="button" id="prevPagina" v-on:click="paginaAnterior">Anterior</button>
-        <button type="button" id="proximaPagina" v-on:click="paginaSiguiente">Siguiente</button>
-    </div>
-</div>
-</section>
+
     <section class="contacto" id="contacto">
       <div class="contacto__title">
         <h2>Formulario Contacto</h2>
