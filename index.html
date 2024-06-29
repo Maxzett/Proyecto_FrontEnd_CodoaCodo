@@ -294,11 +294,12 @@
   <div id="app" class="galeria">
     <div v-if="error">Error al cargar los datos</div>
     <div class="galeria__title">
-      <h2 class="galeria">GALERIA</h2>
+      <h2 class="galeria">EXCURSIONES</h2>
     </div>
     <div v-else class="image-group">
         <div v-for="imagen in datosPaginados" :key="imagen.id" class="image-item">
             <img :src="imagen.url" alt="imagen">
+            
         </div>
     </div>
     <div id="botonesContainer">
@@ -613,7 +614,8 @@
   </div>
   <!--Fin de Ventana Modal-->
   <script src="https://unpkg.com/vue@3"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/usuarios.js"></script>
   <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
 </html>
