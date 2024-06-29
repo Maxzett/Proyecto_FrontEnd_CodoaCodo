@@ -13,7 +13,7 @@ const { createApp } = Vue
         imagen:"",
         guia:"",
         traslado:"",
-        url:'https://patagoniaturismo.pythonanywhere.com/paquetes'+id,
+        url:'https://patagoniaturismo.pythonanywhere.com/paquetes/'+id,
        }  
     },
     methods: {
@@ -55,7 +55,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro modificado")
-                    window.location.href = "./paquetes.html"; // navega a paquetes.html          
+                    window.location.href = "../views/paquetes.html"; // navega a paquetes.html          
                 })
                 .catch(err => {
                     console.error(err);

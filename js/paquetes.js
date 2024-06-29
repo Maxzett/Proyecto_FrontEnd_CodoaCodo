@@ -3,9 +3,9 @@ const { createApp } = Vue
     data() {
       return {
         paquetes:[],
-        url:'http://127.0.0.1:5000/paquetes', 
+        //url:'http://127.0.0.1:5000/paquetes',
         // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
-        //url:'https://patagoniaturismo.pythonanywhere.com/paquetes',   // si ya lo subieron a pythonanywhere
+        url:'https://patagoniaturismo.pythonanywhere.com/paquetes',  // si ya lo subieron a pythonanywhere
         error:false,
         cargando:true,
         /*atributos para el guardar los valores del formulario */
@@ -63,7 +63,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro grabado")
-                    window.location.href = "./paquetes.html";  // recarga productos.html
+                    window.location.href = "../views/paquetes.html";  // recarga paquetes.html
                 })
                 .catch(err => {
                     console.error(err);

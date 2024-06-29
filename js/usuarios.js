@@ -4,13 +4,14 @@ createApp({
     return {
       usuarios: [],
       // esto es para el boton modificar +(location.search.substr(4)===""?'':"/")+location.search.substr(4)
+      //url:'http://127.0.0.1:5000/usuarios',
       url: "https://patagoniaturismo.pythonanywhere.com/usuarios",
       error: false,
       cargando: true,
       /*alta*/
       id: 0,
-      usuario: "admin",
-      clave: "admin",
+      usuario: "patagoniaturismo",
+      clave: "patagonia1234",
     };
   },
   methods: {
@@ -28,62 +29,30 @@ createApp({
           this.error = true;
         });
     },
-    /*
-        eliminar(id) {
-            const url = 'https://mcerda.pythonanywhere.com/usuarioss/' + id;
-            var options = {
-                method: 'DELETE',
-            }
-            fetch(url, options)
-                .then(res => res.text()) // or res.json()
-                .then(res => {
-                    location.reload();
-                })
-        },*/
-    grabar() {
-      let usuario = {
-        usuario: this.usuario,
-        clave: this.clave,
-        rol: 0,
-      };
-      var options = {
-        body: JSON.stringify(usuario),
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        redirect: "follow",
-      };
-      fetch(this.url, options)
-        .then(function () {
-          alert("Registro grabado");
-          window.location.href = "./index.html";
-        })
-        .catch((err) => {
-          console.error(err);
-          alert("Error al Grabarr");
-        });
-    },
-    /*  modificar() {
-              let usuario = {
-                  usuario:this.usuario,
-                  clave: this.clave,
-                  
-              }
-              var options = {
-                  body: JSON.stringify(usuario),
-                  method: 'PUT',
-                  headers: { 'Content-Type': 'application/json' },
-                  redirect: 'follow'
-              }
-              fetch(this.url, options)
-                  .then(function () {               
-                      alert("Registro modificado")
-                      window.location.href = "./usuarios.html";  
-                  })
-                  .catch(err => {
-                      console.error(err);
-                      alert("Error al Modificar")
-                  })      
-          },*/
+
+    // grabar() {
+    //   let usuario = {
+    //     usuario: this.usuario,
+    //     clave: this.clave,
+    //     rol: 0,
+    //   };
+    //   var options = {
+    //     body: JSON.stringify(usuario),
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     redirect: "follow",
+    //   };
+    //   fetch(this.url, options)
+    //     .then(function () {
+    //       alert("Registro grabado");
+    //       window.location.href = "./index.html";
+    //     })
+    //     .catch((err) => {
+    //       console.error(err);
+    //       alert("Error al Grabarr");
+    //     });
+    // },
+
     login() {
       usuario = this.usuario;
       sessionStorage.setItem("adm", 0);
@@ -106,14 +75,13 @@ createApp({
       } else {
         alert("Usuario erronea");
       }
-      /*for (elemento of this.usuarios){
-                if (elemento.usuario == this.usuario && elemento.clave==this.clave ){
-                    if (elemento.rol=1){
-                        sessionStorage.setItem("adm",1)
-                    }
-                }   
-
-            }*/
+      // for (elemento of this.usuarios) {
+      //   if (elemento.usuario == this.usuario && elemento.clave == this.clave) {
+      //     if ((elemento.rol = 1)) {
+      //       sessionStorage.setItem("adm", 1);
+      //     }
+      //   }
+      // }
     },
   },
   created() {
