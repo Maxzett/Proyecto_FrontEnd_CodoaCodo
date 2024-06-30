@@ -13,7 +13,7 @@ const { createApp } = Vue
         imagen:"",
         guia:"",
         traslado:"",
-        url:'https://patagoniaturismo.pythonanywhere.com/paquetes'+id,
+        url:'https://patagoniaturismo.pythonanywhere.com/paquetes/'+id,
        }  
     },
     methods: {
@@ -22,14 +22,14 @@ const { createApp } = Vue
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
-                    this.id=data.id
-                    this.nombre = data.nombre;
-                    this.precio= data.precio;
-                    this.descripcion=data.descripcion
-                    this.duracion=data.duracion
-                    this.imagen=data.imagen
-                    this.guia=data.guia                    
-                    this.traslado=data.traslado                    
+                    this.id=data.id,
+                    this.nombre = data.nombre,
+                    this.precio= data.precio,
+                    this.descripcion=data.descripcion,
+                    this.duracion=data.duracion,
+                    this.imagen=data.imagen,
+                    this.guia=data.guia,                    
+                    this.traslado=data.traslado                   
                 })
                 .catch(err => {
                     console.error(err);
@@ -55,7 +55,7 @@ const { createApp } = Vue
             fetch(this.url, options)
                 .then(function () {
                     alert("Registro modificado")
-                    window.location.href = "./paquetes.html"; // navega a paquetes.html          
+                    window.location.href = "../views/paquetes.html"; // navega a paquetes.html          
                 })
                 .catch(err => {
                     console.error(err);

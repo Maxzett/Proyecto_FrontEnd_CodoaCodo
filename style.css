@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -499,121 +498,59 @@ a:visited {
         font-size: 0.8rem;
     } */
 }
-/*GALERIA*/
+/*PAQUETES*/
+
 .galeria {
-    background-color: rgb(139,137,138);
-    padding:2rem;
+    background-color: gray;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.galeria__title{
-    padding-bottom: 2rem;
     text-align: center;
 }
-.galeria__title h2{
-    font-size: 2.5rem;
+.galeria_title{
+    text-align: center;  
+}
+.paquete_title h2{
+    font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
-.image-group {
-    background-color: rgb(139, 137, 138);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+.tarjeta {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffe8d6;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-.image-item {
-    width: 23%;
-    height: 350px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.image-item img {
+.tarjeta img {
     width: 100%;
-    height: 100%; 
-    border-radius: 10px; 
+    height: auto;
+    border-top-left-radius: 10px; /* Redondear esquina superior izquierda de la imagen */
+    border-top-right-radius: 10px; /* Redondear esquina superior derecha de la imagen */
 }
 
-#botonesContainer {
-    text-align: center; 
+.tarjeta-body {
+    padding: 10px;
 }
 
-#prevPagina, #proximaPagina {
-    padding: 10px ;
+.tarjeta p {
+    margin-bottom: 10px;
+}
+
+.tarjeta button {
+    padding: 10px 20px;
     background-color: cadetblue;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-right: 10px; 
 }
 
-#prevPagina:hover, #proximaPagina:hover {
-    background-color: #a8dadc; 
-}
-
-@media screen and (max-width: 900px) {
-    .image-group {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; 
-    }
-
-    .image-item {
-        width: 48%; 
-        margin-bottom: 20px;
-    }
-
-    #botonesContainer {
-        text-align: center; 
-        padding: 10px;
-    }
-
-    #prevPagina, #proximaPagina {
-        padding: 10px ;
-        background-color: cadetblue;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-right: 10px; 
-    }
-
-    #prevPagina:hover, #proximaPagina:hover {
-        background-color: #a8dadc; 
-    }
-}
-@media screen and (max-width: 650px) {
-    .image-group {
-        flex-wrap: wrap;
-    }
-
-    .image-item {
-        width: 100%; 
-        margin-bottom: 20px; 
-    }
-
-    #botonesContainer {
-        text-align: center; 
-        padding: 10px;
-    }
-
-    #prevPagina, #proximaPagina {
-        padding: 10px ;
-        background-color: cadetblue;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-right: 10px; 
-    }
-
-    #prevPagina:hover, #proximaPagina:hover {
-        background-color: #a8dadc; 
-    }
+.tarjeta button:hover {
+    background-color: #a8dadc;
 }
 
 /* formulario contacto */

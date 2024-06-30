@@ -3,7 +3,7 @@ const { createApp } = Vue
     data() {
       return {
         paquetes:[],
-      
+        //url:'http://127.0.0.1:5000/paquetes', 
    // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
         url:'https://patagoniaturismo.pythonanywhere.com/paquetes',   // si ya lo subieron a pythonanywhere
         error:false,
@@ -11,12 +11,13 @@ const { createApp } = Vue
         /*atributos para el guardar los valores del formulario */
         id:0,
         nombre:"", 
-        precio:0,
+        precio:"",
         descripcion:"",
-        duracion:0,
+        duracion:"",
         imagen:"",
         guia:"",
         traslado:"",
+        
     }  
     },
     methods: {
@@ -52,7 +53,7 @@ const { createApp } = Vue
                 duracion: this.duracion,
                 imagen:this.imagen,
                 guia:this.guia,
-                traslado:this.traslado
+                traslado:this.traslado,
             }
             var options = {
                 body:JSON.stringify(paquete),
