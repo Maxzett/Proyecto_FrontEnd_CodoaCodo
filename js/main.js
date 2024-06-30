@@ -1,3 +1,83 @@
+//navbar y footer para repetir en todos los html
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarHTML = `
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="../index.html"><img class="navbar__logo" src="../images/logotipo.png" alt="logotipo" /></a>
+        <button class="abrir__menu" id="abrir">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="navbar__links__container" id="nav">
+          <button class="cerrar__menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
+          <ul class="navbar__links">
+            <li><a href="#actividades">ACTIVIDADES</a></li>
+            <li><a href="#destinos">DESTINOS</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="/views/paquetes.html">PAQUETES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="/views/login.html">Login</a></li>
+            <div id="crud">
+              <li><a href="/views/paquete_nuevo.html">Nuevo paquete</a></li>
+              <li><a href="/views/paquete_update.html">Editar paquete</a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  `;
+
+  const footerHTML = `
+    <footer>
+      <div class="footer__container">
+        <section class="footer__logo">
+          <img src="../images/logotipo.png" alt="logotipo" />
+        </section>
+        <section class="footer__redes">
+          <ul>
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__news">
+          <div>
+            <h4>Newsletter</h4>
+            <form id="newsletterForm">
+              <input type="email" id="emailInput" placeholder="Email" />
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section>
+      </div>
+      <section class="copyright">
+        <p>2024 Proyecto Integrador | copyright </p>
+      </section>
+    </footer>
+  `;
+
+  document.getElementById('navbar').innerHTML = navbarHTML;
+  document.getElementById('footer').innerHTML = footerHTML;
+});
+
+
+
+
+
+
+
+
 const nav = document.querySelector('#nav')
 const abrir = document.querySelector('#abrir')
 const cerrar = document.querySelector('#cerrar')
@@ -93,3 +173,4 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
     }
+

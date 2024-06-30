@@ -1,136 +1,100 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Paquetes</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <header>
-        <!-- place navbar here -->
-        <nav class="navbar">
-            <div class="navbar__container">
-              <a href="#inicio"><img class="navbar__logo" src="../images/logotipo.png" alt="logotipo" /></a>
-              <button class="abrir__menu" id="abrir">
-                <i class="bi bi-list"></i>
-              </button>
-              <div class="navbar__links__container" id="nav">
-                <button class="cerrar__menu" id="cerrar">
-                  <i class="bi bi-x"></i>
-                </button>
-                <ul class="navbar__links">
-                  <li><a href="#actividades">ACTIVIDADES</a></li>
-                  <li><a href="#destinos">DESTINOS</a></li>
-                  <li><a href="#nosotros">NOSOTROS</a></li>
-                  <li><a href="/views/paquetes.html">PAQUETES</a></li>
-                  <li><a href="#contacto">CONTACTO</a></li>
-                  <li><a href="/views/login.html">Login</a></li>
-                  <div id="crud">
-                    <li><a href="/views/paquete_nuevo.html">Nuevo paquete</a></li>
-                    <li><a href="/views/paquete_update.html">Editar paquete</a></li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-        <div id="app" class="container">
-            <h1>PAQUETES</h1>
-            <br>
-            <a  class="btn btn-primary" href="paquete_nuevo.html">Nuevo</a>
-            <br><br>
-            <div v-if="error">
-                <p>Lo sentimos , ........</p>
-            </div>
-            <div v-else>
-                <section v-if="cargando">
-                    <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
-                </section>
-                <section v-else>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">descripcion</th>
-                                    <th scope="col">duracion</th>
-                                    <th scope="col">Imagen</th>
-                                    <th scope="col">guia</th>
-                                    <th scope="col">traslado</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class=""  v-for="paquete in paquetes">
-                                    <td scope="row">{{paquete.id}}</td>
-                                    <td>{{paquete.nombre}}</td>
-                                    <td>{{paquete.precio}}</td>
-                                    <td>{{paquete.descripcion}}</td>
-                                    <td>{{paquete.duracion}}</td>
-                                    <td>{{paquete.imagen}}</td>
-                                    <td>{{paquete.guia}}</td>
-                                    <td>{{paquete.traslado}}</td>
-                                    <td>
-                                        <img width="60"  :src="paqueteimagen" :alt="paquete.nombre">
-                                    </td>
-                                    <td>
-                    			<a class="btn btn-primary" :href="'paquete_update.html?id='+ paquete.id" >Editar</a>
-                                      <button type="button" class="btn btn-danger" v-on:click="eliminar(paquete.id)" >Eliminar</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <link rel="shortcut icon" href="./images/favicom.png"
+            type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../style.css" />
+        <body>
+            <header class="nav_repeticion">
+                <div id="navbar"></div>
+
+            </header>
+            <main class="main_html">
+                <div id="app" class="container__paquetes">
+                  
+                        <h1>PAQUETES</h1>
+                    
+
+                    <a class="btn btn-primary"
+                        href="paquete_nuevo.html">Nuevo</a>
+                    <br><br>
+                    <div v-if="error">
+                        <p>Lo sentimos , ........</p>
                     </div>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <!-- place footer here -->
-        <div class="footer__container">
-            <section class="footer__logo">
-              <img src="../images/logotipo.png" alt="logotipo" />
-            </section>
-            <section class="footer__redes">
-              <ul>
-                <li>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="bi bi-tiktok"></i></a>
-                </li>
-              </ul>
-            </section>
-            <section class="footer__news">
-              <div>
-                <h4>Newsletter</h4>
-                <form id="newsletterForm">
-                  <input type="email" id="emailInput" placeholder="Email" />
-                  <input type="submit" value="Enviar" />
-                </form>
-              </div>
-            </section>
-          </div>
-          <section class="copyright">
-            <p>2024 Proyecto Integrador | copyright </p>
-          </section>
-    </footer>
-    <!--Link de Bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-<script src="../js/main.js"></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-<script src="../js/paquetes.js"></script>
-</body>
-</html>
+                    <div v-else>
+                        <section v-if="cargando">
+                            <div class="spinner-border"></div>
+                            <p>Cargando .....</p>
+                        </section>
+                        <section v-else>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">descripcion</th>
+                                            <th scope="col">duracion</th>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">guia</th>
+                                            <th scope="col">traslado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class v-for="paquete in paquetes">
+                                            <td scope="row">{{paquete.id}}</td>
+                                            <td>{{paquete.nombre}}</td>
+                                            <td>{{paquete.precio}}</td>
+                                            <td>{{paquete.descripcion}}</td>
+                                            <td>{{paquete.duracion}}</td>
+                                            <td>{{paquete.imagen}}</td>
+                                            <td>{{paquete.guia}}</td>
+                                            <td>{{paquete.traslado}}</td>
+                                            <td>
+                                                <img width="60"
+                                                    :src="paqueteimagen"
+                                                    :alt="paquete.nombre">
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-primary"
+                                                    :href="'paquete_update.html?id='+ paquete.id">Editar</a>
+                                                <button type="button"
+                                                    class="btn btn-danger"
+                                                    v-on:click="eliminar(paquete.id)">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div id="footer"></div>
+            </footer>
+            <!--Link de Bootstrap-->
+            <script
+                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+                integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+                integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+                crossorigin="anonymous"></script>
+            <script src="../js/main.js"></script>
+            <script
+                src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+            <script src="../js/paquetes.js"></script>
+        </body>
+    </html>

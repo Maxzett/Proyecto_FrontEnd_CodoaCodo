@@ -1,43 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zxx">
 <head>
-  <title>Login</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="../style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="shortcut icon" href="./images/favicom.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
 <body>
   <!-- place navbar here -->
-  <nav>
-    <div class="navbar__container">
-      <a href="#inicio"><img class="navbar__logo" src="../images/logotipo.png" alt="logotipo" /></a>
-      <button class="abrir__menu" id="abrir">
-        <i class="bi bi-list"></i>
-      </button>
-        <div class="navbar__links__container" id="nav">
-          <button class="cerrar__menu" id="cerrar">
-            <i class="bi bi-x"></i>
-          </button>
-          <ul class="navbar__links">
-            <li><a href="#actividades">ACTIVIDADES</a></li>
-            <li><a href="#destinos">DESTINOS</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="/views/paquetes.html">PAQUETES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-            <li><a href="/views/login.html">Login</a></li>
-            <div id="crud">
-              <li><a href="/views/paquete_nuevo.html">Nuevo paquete</a></li>
-              <li><a href="/views/paquete_update.html">Editar paquete</a></li>
-            </div>
-          </ul>
-        </div>
-      </div>
-  </nav>
-  <div id="app" class="login__form">
-    <form>
+  <header class="nav_repeticion">
+    <div id="navbar"></div>
+  
+        
+      </header>
+      <main class="main_html">
+  <div id="app" class="container__login">
+    <form class="login__form">
       <h1>Login</h1>
       <div class="mb-3">
         <label for="usuario">Usuario</label>
@@ -50,41 +33,9 @@
       <button type="button" class="btn btn-success" v-on:click="login()">Enviar</button>
     </form>
   </div>
+</main>
   <footer>
-    <!-- place footer here -->
-    <div class="footer__container">
-      <section class="footer__logo">
-        <img src="../images/logotipo.png" alt="logotipo" />
-      </section>
-      <section class="footer__redes">
-        <ul>
-          <li>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bi bi-tiktok"></i></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer__news">
-        <div>
-          <h4>Newsletter</h4>
-          <form id="newsletterForm">
-            <input type="email" id="emailInput" placeholder="Email" />
-            <input type="submit" value="Enviar" />
-          </form>
-        </div>
-      </section>
-    </div>
-    <section class="copyright">
-      <p>2024 Proyecto Integrador | copyright </p>
-    </section>
+    <div id="footer"></div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
