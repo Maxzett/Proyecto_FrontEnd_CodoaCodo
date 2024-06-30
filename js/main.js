@@ -3,20 +3,20 @@ const abrir = document.querySelector('#abrir')
 const cerrar = document.querySelector('#cerrar')
 
 //menu hamburguesa navbar
-// abrir.addEventListener('click', () => {
-//     nav.classList.add('visible')
-// });
+abrir.addEventListener('click', () => {
+    nav.classList.add('visible')
+});
 
-// cerrar.addEventListener('click', () => {
-//     nav.classList.remove('visible')
-// });
+cerrar.addEventListener('click', () => {
+    nav.classList.remove('visible')
+});
 
 //Admin 
-// if (sessionStorage.getItem("adm")!="1"){
-//   document.querySelector("#crud").setAttribute('style', 'display:none')
-// }else{
-//   document.querySelector("#crud").setAttribute('style', 'display:on')
-// }
+if (sessionStorage.getItem("adm")!="1"){
+  document.querySelector("#crud").setAttribute('style', 'display:none')
+}else{
+  document.querySelector("#crud").setAttribute('style', 'display:on')
+}
 
 // FORM VALIDATION
 
