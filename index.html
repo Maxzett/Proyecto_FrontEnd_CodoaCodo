@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -183,7 +184,7 @@
         </section>
       </div>
     </div>
-    
+
 
     <section class="destinos" id="destinos">
       <div class="destinos__title">
@@ -274,7 +275,28 @@
         </div>
       </div>
     </section>
+<section>
+  <div class="galeria">
+    <h2>PAQUETES TURISTICOS</h2>
+  </div>
+  <div id="app" class="galeria">
+    <div v-for="paquete in paquetes" :key="paquete.id" class="tarjeta">
+        <img class="tarjeta-img" :src="paquete.imagen" :alt="paquete.nombre">
+        
+        <div class="tarjeta-body">
+            <h3 class="tarjetatitle">{{ paquete.nombre }}</h3>
+            <p class="tarjeta-description">{{ paquete.descripcion }}</p>
+            <p class="tarjeta-price">Precio: {{ paquete.precio }}</p>
+            <p class="tarjeta-duracion">Duración: {{ paquete.duracion }}</p>
+            <p class="tarjeta-guia">Guía: {{ paquete.guia }}</p>
+            <p class="tarjeta-traslado">Traslado: {{ paquete.traslado }}</p>
+            <button class="btn-agregar" @click="">Agregar</button>
+        </div>
+    </div>
+</div>
 
+
+</section>
     <section class="nosotros" id="nosotros">
       <div class="nosotros__section">
         <div class="nosotros__container">
@@ -602,6 +624,7 @@
   <!--Fin de Ventana Modal-->
   <script src="https://unpkg.com/vue@3"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/paquetes.js"></script>
   <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
 </html>
