@@ -20,8 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <li><a href="#contacto">CONTACTO</a></li>
             <li><a href="/views/login.html">Login</a></li>
             <div id="crud">
-              <li><a href="/views/paquete_nuevo.html">Nuevo paquete</a></li>
-              <li><a href="/views/paquete_update.html">Editar paquete</a></li>
+              <li><a href="/views/paquete_nuevo.html">Cargar paquete</a></li>
+            <li><a href="/views/paquete_update.html">Editar paquete</a></li>
+            <li><a href="/views/paquetes.html">Paquetes activos</a></li>
             </div>
           </ul>
         </div>
@@ -69,6 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('navbar').innerHTML = navbarHTML;
   document.getElementById('footer').innerHTML = footerHTML;
+
+  if (sessionStorage.getItem("adm")!="1"){
+    document.querySelector("#crud").setAttribute('style', 'display:none')
+}else{
+    document.querySelector("#crud").setAttribute('style', 'display:on')
+}
 });
 
 
