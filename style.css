@@ -658,7 +658,7 @@ form .left , .rigth{
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+   
     align-self: center;
     color: #fff;
     padding: 1rem 2rem;
@@ -1070,7 +1070,7 @@ form .left , .rigth{
 
 .main_html{
     width:100%;
-        height: 75vh; 
+        height: 100vh; 
 }
 
 .container__paquetes{
@@ -1096,4 +1096,121 @@ padding: 20px;
     margin:10px auto ; 
     width: 400px; 
     padding: 20px;
+}
+/*paquetes*/
+.texto-paquetes{
+
+    text-align: center;
+   
+}
+.container__paquetes{
+    margin-left: 60px;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Habilita el scroll horizontal si es necesario */
+    margin: 20px 20px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 30px;
+    text-align: center;
+    white-space: nowrap; /* Evita el salto de línea en el contenido de las celdas */
+}
+.table th {
+    background-color: #f2f2f2;
+}
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.table img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 20px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+/*login*/
+.login {
+    margin-bottom: 20px; /* Espaciado inferior entre elementos */
+}
+
+.login label {
+    display: block; /* Mostrar etiquetas en línea */
+    margin-bottom: 5px; /* Espaciado inferior de etiquetas */
+    color: #666666; /* Color del texto de etiquetas */
+    font-size: 16px; /* Tamaño del texto de etiquetas */
+}
+
+.login input[type="text"] {
+    width: 100%; /* Ancho completo del campo de texto */
+    padding: 12px; /* Espaciado interno del campo de texto */
+    font-size: 16px; /* Tamaño del texto del campo de texto */
+    border: 1px solid #dddddd; /* Borde del campo de texto */
+    border-radius: 4px; /* Bordes redondeados del campo de texto */
+    box-sizing: border-box; /* Tamaño total incluido borde y relleno */
+}
+
+.btn-success {
+    background-color: cadetblue; /* Color de fondo del botón */
+    border: 2px solid cadetblue; /* Borde sólido del botón */
+    color: white; /* Color del texto del botón */
+    padding: 12px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.btn-success:hover {
+    background-color: rgb(117, 192, 193); /* Cambio de color de fondo al pasar el ratón */
+    border-color: cadetblue; /* Cambio de color de borde al pasar el ratón */
+}
+
+.btn-success:focus {
+    outline: none; /* Eliminar contorno de enfoque */
+}
+
+.btn-success:active {
+    background-color: #7bb07d; /* Color activo */
 }

@@ -20,10 +20,9 @@
             </header>
             <main class="main_html">
                 <div id="app" class="container__paquetes">
-                  
+                    <div class="texto-paquetes">
                         <h1>PAQUETES</h1>
-                    
-
+                    </div>
                     <a class="btn btn-primary"
                         href="paquete_nuevo.html">Nuevo</a>
                     <br><br>
@@ -61,7 +60,7 @@
                                             <td>{{paquete.guia}}</td>
                                             <td>{{paquete.traslado}}</td>
                                             <td>
-                                                <img width="60"
+                                                <img width="100"
                                                     :src="paqueteimagen"
                                                     :alt="paquete.nombre">
                                             </td>
