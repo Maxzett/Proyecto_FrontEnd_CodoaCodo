@@ -13,17 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
             <i class="bi bi-x"></i>
           </button>
           <ul class="navbar__links">
-            <li><a href="#actividades">ACTIVIDADES</a></li>
-            <li><a href="#destinos">DESTINOS</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="/views/paquetes.html">PAQUETES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-            <li><a href="/views/login.html">Login</a></li>
+            <li><a href="../index.html#actividades">ACTIVIDADES</a></li>
+            <li><a href="../index.html#destinos">DESTINOS</a></li>
+            <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+            <li><a href="../index.html#paquetes.html">PAQUETES</a></li>
+            <li><a href="../index.html#contacto">CONTACTO</a></li>
+            <li><a href="/views/login.html">LOGIN</a></li>
             <div id="crud">
               <li><a href="/views/paquete_nuevo.html">Cargar paquete</a></li>
-            <li><a href="/views/paquete_update.html">Editar paquete</a></li>
-            <li><a href="/views/paquetes.html">Paquetes activos</a></li>
+              <li><a href="/views/paquete_update.html">Editar paquete</a></li>
+              <li><a href="/views/paquetes.html">Paquetes activos</a></li>
             </div>
+            <li><a href="#" id="logout">CERRAR SESIÓN</a></li>
           </ul>
         </div>
       </div>
@@ -73,11 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (sessionStorage.getItem("adm")!="1"){
     document.querySelector("#crud").setAttribute('style', 'display:none')
-}else{
+  }else{
     document.querySelector("#crud").setAttribute('style', 'display:on')
-}
-});
+  }
 
+  // cerrar sesión
+  document.getElementById('logout').addEventListener('click', () => {
+    sessionStorage.removeItem("adm");
+    window.location.href = "../index.html"; 
+  });
+});
 
 
 

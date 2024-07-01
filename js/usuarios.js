@@ -10,8 +10,8 @@ createApp({
       cargando: true,
       /*alta*/
       id: 0,
-      usuario: "patagoniaturismo",
-      clave: "patagonia1234",
+      usuario: "",
+      clave: "",
     };
   },
   methods: {
