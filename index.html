@@ -275,22 +275,23 @@
         </div>
       </div>
     </section>
-<section>
-  <div class="galeria">
-    <h2>PAQUETES TURISTICOS</h2>
-  </div>
-  <div id="app" class="galeria">
+<section class="galeria">
+    <div class="paquetes__title">
+      <h2>PAQUETES TURISTICOS</h2>
+      <p>Aca todos nuestros paquetes, para que elijas tu proximo destino vacacional</p>
+    </div>
+  <div id="app" class="paquetes">
     <div v-for="paquete in paquetes" :key="paquete.id" class="tarjeta">
         <img class="tarjeta-img" :src="paquete.imagen" :alt="paquete.nombre">
         
         <div class="tarjeta-body">
-            <h3 class="tarjetatitle">{{ paquete.nombre }}</h3>
+            <h3 class="tarjeta-title">{{ paquete.nombre }}</h3>
             <p class="tarjeta-description">{{ paquete.descripcion }}</p>
-            <p class="tarjeta-price">Precio: {{ paquete.precio }}</p>
             <p class="tarjeta-duracion">Duración: {{ paquete.duracion }}</p>
             <p class="tarjeta-guia">Guía: {{ paquete.guia }}</p>
             <p class="tarjeta-traslado">Traslado: {{ paquete.traslado }}</p>
-            <button class="btn-agregar" @click="">Agregar</button>
+            <p class="tarjeta-price">$ {{ paquete.precio }}</p>
+            <button class="btn-agregar" @click="">Comprar</button>
         </div>
     </div>
 </div>
