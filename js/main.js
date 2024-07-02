@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <li><a href="../index.html#contacto">CONTACTO</a></li>
             <li><a href="/views/login.html">LOGIN</a></li>
             <div id="crud">
-              <li><a href="/views/paquete_nuevo.html">Cargar paquete</a></li>
-              <li><a href="/views/paquete_update.html">Editar paquete</a></li>
-              <li><a href="/views/paquetes.html">Paquetes activos</a></li>
+              <li><a href="/views/paquetes.html">ADMINISTRAR PAQUETES</a></li>
             </div>
             <li><a href="#" id="logout">CERRAR SESIÓN</a></li>
           </ul>
