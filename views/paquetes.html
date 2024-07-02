@@ -56,14 +56,14 @@
                                             <td>{{paquete.precio}}</td>
                                             <td>{{paquete.descripcion}}</td>
                                             <td>{{paquete.duracion}}</td>
-                                            <td>{{paquete.imagen}}</td>
-                                            <td>{{paquete.guia}}</td>
-                                            <td>{{paquete.traslado}}</td>
+                                            <!-- <td>{{paquete.imagen}}</td> -->
                                             <td>
-                                                <img width="100"
-                                                    :src="paqueteimagen"
+                                                <img width="200"
+                                                    :src="paquete.imagen"
                                                     :alt="paquete.nombre">
                                             </td>
+                                            <td>{{paquete.guia}}</td>
+                                            <td>{{paquete.traslado}}</td>
                                             <td>
                                                 <a class="btn btn-primary"
                                                     :href="'paquete_update.html?id='+ paquete.id">Editar</a>
