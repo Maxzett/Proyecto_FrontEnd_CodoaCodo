@@ -11,45 +11,53 @@
     href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../style-admin.css" />
 <body>
   <header class="nav_repeticion">
     <div id="navbar"></div>
       </header>
-  <main class="main_html">
-    <div class="container__paquetes" id="app">
-       <form  class="paquete_nuevo_form">
+  <main>
+    <div class="nuevo__paquete" id="app">
+      <div class="nuevo__paquete__titulo">
         <h1>AGREGAR PAQUETE</h1>
-        <div class="mb-3">
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" v-model="nombre">
-        </div>
-        <div class="mb-3">
-          <label for="precio">Precio</label>
-          <input type="number" name="precio" id="precio" v-model="precio">
-        </div>
-        <div class="mb-3">
-          <label for="stock">descripcion</label>
-          <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
-        </div>
-        <div class="mb-3">
-          <label for="tipoproducto">duracion</label>
-          <input type="number" name="duracion" id="duracion" v-model="duracion">
-        </div>
-        <div class="mb-3">
-          <label for="imagen">Imagen</label>
-          <input type="text" name="imagen" id="imagen" v-model="imagen">
-          <img width="100" :src="imagen" alt="">
-        </div>   
-        <div class="mb-3">
-          <label for="guia">guia</label>
-          <input type="radio" name="guia" id="guia" v-model="guia">
-        </div>    
-        <div class="mb-3">
-          <label for="traslado">traslado</label>
-          <input type="radio" name="traslado" id="traslado" v-model="traslado">
-        </div>    
-          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
-      </form>
+      </div>
+       <div class="nuevo__form__container">
+         <form>
+           <div class="mb-3">
+           <label for="nombre">Nombre</label>
+           <input type="text" name="nombre" id="nombre" v-model="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" v-model="precio">
+          </div>
+          <div class="mb-3">
+            <label for="stock">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+          </div>
+          <div class="mb-3">
+            <label for="tipoproducto">Duracion</label>
+            <input type="number" name="duracion" id="duracion" v-model="duracion">
+          </div>
+          <div class="mb-3">
+            <label for="imagen">Imagen</label>
+            <input type="text" name="imagen" id="imagen" v-model="imagen">
+            <img width="100" :src="imagen" alt="">
+          </div>
+          <div class="mb-3">
+            <label for="guia">Guia</label>
+            <input type="radio" name="guia" id="guia" v-model="guia">
+          </div>
+          <div class="mb-3">
+            <label for="traslado">Traslado</label>
+            <input type="radio" name="traslado" id="traslado" v-model="traslado">
+          </div>
+            <div class="mb-3 botones__nuevo">
+              <button class="btn btn-success" v-on:click="grabar()">Grabar</button>
+              <button class="btn btn-danger" ><a href="./paquetes.html">Cancelar</a></button>
+            </div>
+        </form>
+       </div>
     </div>
   </main>
   <footer>

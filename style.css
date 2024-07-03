@@ -763,11 +763,6 @@ select {
         flex-direction: column;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
     .contacto__container {
         padding: .5rem;
         padding: .5rem;
@@ -1271,60 +1266,18 @@ select {
 }
 
 /*ADMINISTRACION PAQUETES*/
-
-.main_html {
-    width: 100%;
-    height: 100vh;
-}
-
-/*Formulario paquete nuevo*/
-.paquete_nuevo_form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    padding-top: 5rem;
-}
-
-
-/*Formulario editar paquete*/
-.paquete_update_form {
-    margin: 10px auto;
-    width: 400px;
-    padding: 20px;
-}
-
-
 /*paquetes*/
-.texto-paquetes {
-    margin-top: 5rem;
-    text-align: center;
-
-}
-
-.container__paquetes {
-    margin-left: 60px;
-}
 
 .table-responsive {
     overflow-x:  visible; /*sacarlo una vez que este corregido el ancho de tabla*/
     /* Habilita el scroll horizontal si es necesario */
-    margin: 20px 20px;
 }
 
 .table {
-    width: 100%;
+    /* width: 100%; */
     border-collapse: collapse;
     background-color: #fff;
     border: 1px solid #ccc;
-}
-
-.table th,
-.table td {
-    border: 1px solid #ccc;
-    padding: 30px;
-    text-align: center;
-    white-space: nowrap;
-    /* Evita el salto de línea en el contenido de las celdas */
 }
 
 .table th {
@@ -1347,9 +1300,6 @@ select {
 }
 
 .btn {
-    padding: 0.375rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
     border-radius: 0.25rem;
     text-align: center;
     transition: all 0.3s ease;
@@ -1385,12 +1335,13 @@ select {
     margin-bottom: 20px;
     /* Espaciado inferior entre elementos */
 }
-
-.container__login {
-    padding-top: 5rem;
+.container__login{
+    padding: 5rem 2rem;    
 }
 
 .login__form {
+    margin-bottom: 5rem;
+    margin-top: 4.5rem;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
