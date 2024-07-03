@@ -1270,15 +1270,11 @@ select {
     }
 }
 
-/*Resto html*/
+/*ADMINISTRACION PAQUETES*/
 
 .main_html {
     width: 100%;
     height: 100vh;
-}
-
-.container__paquetes {
-    padding-top: 5rem;
 }
 
 /*Formulario paquete nuevo*/

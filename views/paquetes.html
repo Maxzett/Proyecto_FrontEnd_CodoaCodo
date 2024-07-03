@@ -13,70 +13,66 @@
             href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../style-admin.css" />
         <body>
             <header class="nav_repeticion">
                 <div id="navbar"></div>
-
             </header>
-            <main class="main_html">
-                <div id="app" class="container__paquetes">
-                    <div class="texto-paquetes">
-                        <h1>PAQUETES</h1>
+            <main >
+                <div id="app" class="container__crud__paquetes">
+                    <div class="titulo__paquetes">
+                        <h1>CRUD PAQUETES</h1>
                     </div>
-                    <a class="btn btn-primary"
-                        href="paquete_nuevo.html">Nuevo</a>
-                    <br><br>
-                    <div v-if="error">
-                        <p>Lo sentimos , ........</p>
+                     <a class="boton__nuevo"
+                        href="paquete_nuevo.html">Nuevo Paquete</a>
+                    <div class="error__paquetes" v-if="error">
+                        <p>Lo sentimos, hubo un error al cargar el contenido.</p>
                     </div>
                     <div v-else>
-                        <section v-if="cargando">
+                        <section class="cargando__paquetes" v-if="cargando">
                             <div class="spinner-border"></div>
-                            <p>Cargando .....</p>
+                            <p>Cargando contenido ...</p>
                         </section>
                         <section v-else>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
+                            <div class=" table-resposive-md tabla__container">
+                                <table class="table">
                                     <thead>
                                         <tr>
                                             <th scope="col">Id</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Precio</th>
-                                            <th scope="col">descripcion</th>
-                                            <th scope="col">duracion</th>
                                             <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">descripcion</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">duracion</th>
                                             <th scope="col">guia</th>
                                             <th scope="col">traslado</th>
+                                            <th scope="col"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class v-for="paquete in paquetes">
                                             <td scope="row">{{paquete.id}}</td>
-                                            <td>{{paquete.nombre}}</td>
-                                            <td>{{paquete.precio}}</td>
-                                            <td>{{paquete.descripcion}}</td>
-                                            <td>{{paquete.duracion}}</td>
-                                            <!-- <td>{{paquete.imagen}}</td> -->
                                             <td>
-                                                <img width="200"
-                                                    :src="paquete.imagen"
-                                                    :alt="paquete.nombre">
+                                                <img
+                                                :src="paquete.imagen"
+                                                :alt="paquete.nombre">
                                             </td>
+                                            <td>{{paquete.nombre}}</td>
+                                            <td>{{paquete.descripcion}}</td>
+                                            <td>${{paquete.precio}}</td>
+                                            <td>{{paquete.duracion}}hora/s</td>
                                             <td>{{paquete.guia}}</td>
                                             <td>{{paquete.traslado}}</td>
-                                            <td>
-                                                <a class="btn btn-primary"
-                                                    :href="'paquete_update.html?id='+ paquete.id">Editar</a>
-                                                <button type="button"
-                                                    class="btn btn-danger"
-                                                    v-on:click="eliminar(paquete.id)">Eliminar</button>
+                                            <td class="botones__crud">
+                                                <a class="btn btn-primary" :href="'paquete_update.html?id='+ paquete.id">Editar</a>
+                                                <a class="btn btn-danger" v-on:click="eliminar(paquete.id)">Eliminar</a>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </section>
-                    </div>
+                    </div> 
                 </div>
             </main>
             <footer>
