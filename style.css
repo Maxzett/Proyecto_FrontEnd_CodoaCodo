@@ -1308,14 +1308,14 @@ select {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: cadetblue;
+    border-color: cadetblue;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: cadetblue;
+    border-color: cadetblue;
 }
 
 .btn-danger {
@@ -1336,9 +1336,14 @@ select {
     /* Espaciado inferior entre elementos */
 }
 .container__login{
-    padding: 5rem 2rem;    
+    padding: 5rem 2rem;
+        
 }
 
+.titulo_login{
+    padding-top: 2rem;
+    text-align: center;
+}
 .login__form {
     margin-bottom: 5rem;
     margin-top: 4.5rem;

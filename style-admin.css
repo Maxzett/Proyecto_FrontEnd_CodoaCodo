@@ -83,3 +83,8 @@
 }
 
 /* EDITAR PAQUETE */
+
+.nuevo__paquete__titulo{
+    padding-top: 2rem;
+    text-align: center;
+}
