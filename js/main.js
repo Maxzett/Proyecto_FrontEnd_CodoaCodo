@@ -1,22 +1,113 @@
+//navbar y footer para repetir en todos los html
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navbarHTML = `
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="../index.html"><img class="navbar__logo" src="../images/logotipo.png" alt="logotipo" /></a>
+        <button class="abrir__menu" id="abrir">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="navbar__links__container" id="nav">
+          <button class="cerrar__menu" id="cerrar">
+            <i class="bi bi-x"></i>
+          </button>
+          <ul class="navbar__links">
+            <li><a href="../index.html#actividades">ACTIVIDADES</a></li>
+            <li><a href="../index.html#destinos">DESTINOS</a></li>
+            <li><a href="../index.html#nosotros">NOSOTROS</a></li>
+            <li><a href="../index.html#paquetes.html">PAQUETES</a></li>
+            <li><a href="../index.html#contacto">CONTACTO</a></li>
+            <li><a href="/views/login.html">LOGIN</a></li>
+            <div id="crud">
+              <li><a href="/views/paquetes.html">ADMINISTRAR PAQUETES</a></li>
+            </div>
+            <li><a href="#" id="logout">CERRAR SESIÓN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  `;
+
+  const footerHTML = `
+    <footer>
+      <div class="footer__container">
+        <section class="footer__logo">
+          <img src="../images/logotipo.png" alt="logotipo" />
+        </section>
+        <section class="footer__redes">
+          <ul>
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__news">
+          <div>
+            <h4>Newsletter</h4>
+            <form id="newsletterForm">
+              <input type="email" id="emailInput" placeholder="Email" />
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+        </section>
+      </div>
+      <section class="copyright">
+        <p>2024 Proyecto Integrador | copyright </p>
+      </section>
+    </footer>
+  `;
+
+  document.getElementById('navbar').innerHTML = navbarHTML;
+  document.getElementById('footer').innerHTML = footerHTML;
+
+  if (sessionStorage.getItem("adm")!="1"){
+    document.querySelector("#crud").setAttribute('style', 'display:none')
+  }else{
+    document.querySelector("#crud").setAttribute('style', 'display:on')
+  }
+
+  // cerrar sesión
+  document.getElementById('logout').addEventListener('click', () => {
+    sessionStorage.removeItem("adm");
+    window.location.href = "../index.html"; 
+  });
+});
+
+
+
+
+
+
+
 const nav = document.querySelector('#nav')
 const abrir = document.querySelector('#abrir')
 const cerrar = document.querySelector('#cerrar')
 
 //menu hamburguesa navbar
-// abrir.addEventListener('click', () => {
-//     nav.classList.add('visible')
-// });
+abrir.addEventListener('click', () => {
+    nav.classList.add('visible')
+});
 
-// cerrar.addEventListener('click', () => {
-//     nav.classList.remove('visible')
-// });
+cerrar.addEventListener('click', () => {
+    nav.classList.remove('visible')
+});
 
 //Admin 
-// if (sessionStorage.getItem("adm")!="1"){
-//   document.querySelector("#crud").setAttribute('style', 'display:none')
-// }else{
-//   document.querySelector("#crud").setAttribute('style', 'display:on')
-// }
+if (sessionStorage.getItem("adm")!="1"){
+  document.querySelector("#crud").setAttribute('style', 'display:none')
+}else{
+  document.querySelector("#crud").setAttribute('style', 'display:on')
+}
 
 // FORM VALIDATION
 
@@ -93,3 +184,4 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
     }
+

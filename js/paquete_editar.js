@@ -11,8 +11,8 @@ const { createApp } = Vue
         descripcion:"",
         duracion:0,
         imagen:"",
-        guia:"",
-        traslado:"",
+        guia:false,
+        traslado:false,
         url:'https://patagoniaturismo.pythonanywhere.com/paquetes/'+id,
        }  
     },

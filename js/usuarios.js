@@ -10,8 +10,8 @@ createApp({
       cargando: true,
       /*alta*/
       id: 0,
-      usuario: "patagoniaturismo",
-      clave: "patagonia1234",
+      usuario: "",
+      clave: "",
     };
   },
   methods: {
@@ -68,7 +68,7 @@ createApp({
           if (this.usuarios[i].rol == 1) {
             sessionStorage.setItem("adm", 1);
           }
-          window.location.href = "./index.html";
+          window.location.href = "../index.html";
         } else {
           alert("Clave erronea");
         }
