@@ -19,38 +19,48 @@
       <header class="nav_repeticion">
         <div id="navbar"></div>
       </header>
-      <main>
+      <main style="background-color:#ffddd2;">
         <div class="container__login" id="app">
-          <form class="login__form">
+          <form class="login__form" >
           <h2>Editar Paquete</h2>
+          <br>
+          <br>
           <div class="mb-3">
-            <label for="nombre">Nombre: &nbsp;&nbsp; &nbsp;&nbsp;</label>
+            <label for="nombre">Nombre: &nbsp;&nbsp; &nbsp; &nbsp; </label>
             <input type="text" name="nombre" id="nombre" v-model="nombre" placeholder="Ingrese su nombre">
           </div>
+          <br>
           <div class="mb-3">
-            <label for="precio">Precio:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+            <label for="precio">Precio:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
             <input type="number" name="precio" id="precio" v-model="precio" placeholder="Ingrese el precio">
           </div>
+          <br>
           <div class="mb-3">
-            <label for="stock">descripcion:&nbsp;</label>
+            <label for="stock">descripcion:&nbsp; </label>
             <input type="text" name="descripcion" id="descripcion" v-model="descripcion" placeholder="Ingrese descripcion">
           </div>
+          <br>
           <div class="mb-3">
-            <label for="tipoproducto">duracion:&nbsp; &nbsp; &nbsp;</label>
+            <label for="tipoproducto">duracion:&nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="number" name="duracion" id="duracion" v-model="duracion" placeholder="Ingrese hora">
           </div>
+          
           <div class="mb-3">
-            <label for="imagen">Imagen:&nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <label for="imagen">Imagen:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="text" name="imagen" id="imagen" v-model="imagen" placeholder="Ingrese Imagen">
             <img width="100" :src="imagen" alt="">
           </div>   
+          <br>
           <div class="mb-3">
-            <label for="guia">guia: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <label for="guia">guia: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="radio" name="guia" id="guia" v-model="guia">
           </div>    
+          <br>
           <div class="mb-3">
-            <label for="traslado">traslado: &nbsp; &nbsp; &nbsp; </label>
+            <label for="traslado">traslado: &nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="radio" name="traslado" id="traslado" v-model="traslado">
+            <br>
+            <br>
           </div>    
           <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
           </form>

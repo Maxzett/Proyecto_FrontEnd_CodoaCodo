@@ -28,35 +28,37 @@
         <h1 class="nuevo__paquete__titulo">
           AGREGAR PAQUETE</h1>
           <div class="nuevo__form__container">
-            <div class="nuevo__form__container form">
+            <div class="nuevo__form__container">
         <div class="mb-3">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre" v-model="nombre">
+          <label for="nombre">Nombre:&nbsp; &nbsp; &nbsp; &nbsp;</label>
+          <input type="text" name="nombre" id="nombre" v-model="nombre" placeholder="Ingrese Nombre">
         </div>
-        <div class="mb-3">
-          <label for="precio">Precio:</label>
-          <input type="number" name="precio" id="precio" v-model="precio">
-        </div>
-        <div class="mb-3 botones__nuevo">
-          <label for="stock">descripcion:</label>
-          <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+        <div class="mb-3 botones__nuevo" >
+          <label for="precio">Precio:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+          <input type="number" name="precio" id="precio" v-model="precio" placeholder="Ingrese Monto">
         </div>
         <div class="mb-3 botones__nuevo">
-          <label for="tipoproducto">duracion:</label>
-          <input type="number" name="duracion" id="duracion" v-model="duracion">
+          <label for="stock">descripcion:&nbsp;</label>
+          <input type="text" name="descripcion" id="descripcion" v-model="descripcion" placeholder="Ingrese Descripcion">
         </div>
         <div class="mb-3 botones__nuevo">
-          <label for="imagen">Imagen:</label>
-          <input type="text" name="imagen" id="imagen" v-model="imagen">
+          <label for="tipoproducto">duracion: &nbsp; &nbsp; &nbsp;</label>
+          <input type="number" name="duracion" id="duracion" v-model="duracion" placeholder="Ingresela Duracion">
+        </div>
+        <div class="mb-3 botones__nuevo">
+          <label for="imagen">Imagen:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+          <input type="text" name="imagen" id="imagen" v-model="imagen" placeholder="Ingrese Imagen">
           <img width="100" :src="imagen" alt="">
         </div>   
         <div class="mb-3 botones__nuevo">
-          <label for="guia">guia:</label>
+          <label for="guia">guia:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
           <input type="radio" name="guia" id="guia" v-model="guia">
         </div>    
         <div class="mb-3 botones__nuevo">
-          <label for="traslado">traslado:</label>
+          <label for="traslado">traslado:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
           <input type="radio" name="traslado" id="traslado" v-model="traslado">
+          <br>
+          <br>
         </div>    
           <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
       </div>

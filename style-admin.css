@@ -65,22 +65,14 @@
 .nuevo__form__container form{
     background-color: #ffe8e6;
     width: 400px;
-    align-content: center;
+    
     margin-inline: auto;
-    padding: 1rem;
+    padding: 3rem;
 }
 .mb-3{
     margin-top: 1rem;
 }
-.botones__nuevo{
-    display: flex;
-    justify-content: space-around;
-}
-.botones__nuevo button a{
-    padding: 1rem;
-    border: none;
-    font-size: 1rem;
-}
+
 
 /* EDITAR PAQUETE */
 

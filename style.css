@@ -1329,7 +1329,9 @@ select {
     background-color: #c82333;
     border-color: #bd2130;
 }
-
+.boton-paquete{
+    text-align: center;
+}
 /*login*/
 .login {
     margin-bottom: 20px;
