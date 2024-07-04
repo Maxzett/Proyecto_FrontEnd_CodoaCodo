@@ -1,0 +1,82 @@
+.container__crud__paquetes{
+    background-color: #ffddd2;
+    padding: 2rem;
+}
+.titulo__paquetes{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.boton__nuevo{
+    background-color: cadetblue;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+.boton__nuevo:hover{
+    background-color: rgb(113, 192, 195);
+}
+.error__paquetes{
+    padding-top: 2rem;
+}
+.cargando__paquetes{
+    padding-top: 2rem;
+}
+.error__paquetes, .cargando__paquetes p{
+    font-size: 1.5rem;
+}
+/* Tabla */
+.tabla__container{
+    margin-top: 2rem;
+}
+.tabla__container th{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.tabla__container td{
+    font-size: 1rem;
+}
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    white-space: wrap;
+}
+.botones__crud a{
+    cursor: pointer;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+/* NUEVO PAQUETE */
+
+.nuevo__paquete{
+    padding: 4rem 2rem;
+    background-color: #ffddd2;
+}
+.nuevo__paquete__titulo{
+    padding: 2rem 0;
+
+}
+.nuevo__form__container{
+    align-content: center;
+    margin-inline: auto;
+}
+.nuevo__form__container form{
+    background-color: #ffe8e6;
+    width: 400px;
+    
+    margin-inline: auto;
+    padding: 3rem;
+}
+.mb-3{
+    margin-top: 1rem;
+}
+
+
+/* EDITAR PAQUETE */
+
+.nuevo__paquete__titulo{
+    padding-top: 2rem;
+    text-align: center;
+}

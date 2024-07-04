@@ -1,0 +1,85 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <title>Paquete Update</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="shortcut icon" href="./images/favicom.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@900&family=Sofia+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Sofia+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+      <!-- place navbar here -->
+      <header class="nav_repeticion">
+        <div id="navbar"></div>
+      </header>
+      <main style="background-color:#ffddd2;">
+        <div class="container__login" id="app">
+          <form class="login__form" >
+          <h2>Editar Paquete</h2>
+          <br>
+          <br>
+          <div class="mb-3">
+            <label for="nombre">Nombre: &nbsp;&nbsp; &nbsp; &nbsp; </label>
+            <input type="text" name="nombre" id="nombre" v-model="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="precio">Precio:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+            <input type="number" name="precio" id="precio" v-model="precio" placeholder="Ingrese el precio">
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="stock">descripcion:&nbsp; </label>
+            <input type="text" name="descripcion" id="descripcion" v-model="descripcion" placeholder="Ingrese descripcion">
+          </div>
+          <br>
+          <div class="mb-3">
+            <label for="tipoproducto">duracion:&nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="number" name="duracion" id="duracion" v-model="duracion" placeholder="Ingrese hora">
+          </div>
+          
+          <div class="mb-3">
+            <label for="imagen">Imagen:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" name="imagen" id="imagen" v-model="imagen" placeholder="Ingrese Imagen">
+            <img width="100" :src="imagen" alt="">
+          </div>   
+          <br>
+          <div class="mb-3">
+            <label for="guia">guia: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="radio" name="guia" id="guia" v-model="guia">
+          </div>    
+          <br>
+          <div class="mb-3">
+            <label for="traslado">traslado: &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="radio" name="traslado" id="traslado" v-model="traslado">
+            <br>
+            <br>
+          </div>    
+          <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div id="footer"></div>
+      </footer>
+      <!-- Bootstrap JavaScript Libraries -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/paquete_editar.js"></script>
+    </html>
+    

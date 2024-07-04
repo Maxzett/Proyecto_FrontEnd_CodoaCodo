@@ -30,8 +30,12 @@
           <li><a href="#actividades">ACTIVIDADES</a></li>
           <li><a href="#destinos">DESTINOS</a></li>
           <li><a href="#nosotros">NOSOTROS</a></li>
-          <li><a href="#galeria">GALERIA</a></li>
+          <li><a href="#paquetes">PAQUETES</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
+          <li><a href="/views/login.html">LOGIN</a></li>
+          <div id="crud">
+            <li><a href="/views/paquetes.html">ADMINISTRAR PAQUETES</a></li>
+          </div>
         </ul>
       </div>
     </div>
@@ -270,43 +274,46 @@
         </div>
       </div>
     </section>
+<section class="galeria" id="paquetes">
+    <div class="paquetes__title">
+      <h2>PAQUETES TURISTICOS</h2>
+      <p>Aca todos nuestros paquetes, para que elijas tu proximo destino vacacional</p>
+    </div>
+  <div id="app" class="paquetes">
+    <div v-for="paquete in paquetes" :key="paquete.id" class="tarjeta">
+        <img class="tarjeta-img" :src="paquete.imagen" :alt="paquete.nombre">
+        
+        <div class="tarjeta-body">
+            <h3 class="tarjeta-title">{{ paquete.nombre }}</h3>
+            <p class="tarjeta-description">{{ paquete.descripcion }}</p>
+            <p class="tarjeta-duracion">Duración: {{ paquete.duracion }}</p>
+            <p class="tarjeta-guia">Guía: {{ paquete.guia }}</p>
+            <p class="tarjeta-traslado">Traslado: {{ paquete.traslado }}</p>
+            <p class="tarjeta-price">$ {{ paquete.precio }}</p>
+            <div class="boton-paquete">
+            <button class="btn-comprar" @click="" ><a href="#contacto" class="btn-comprar">Comprar</a></button>
+          </div>
+          </div>
+    </div>
+</div>
 
+
+</section>
     <section class="nosotros" id="nosotros">
       <div class="nosotros__section">
         <div class="nosotros__container">
           <h2>NOSOTROS</h2>
           <h4>PATAGONIA, TURISMO Y AVENTURA</h4>
-          <p> Somos una asociación civil que tiene como fin proteger y propiciar el desarrollo de turismo activo en la
-            Patagonia, generando un verdadero espacio de participación, promoviendo el crecimiento de las distintas
-            actividades, estableciendo vínculos con las organizaciones estatales y privadas, y creando marcos de apoyo y
-            respaldo para sus integrantes.
-            La asociación propicia un trabajo colaborativo y para ello los integrantes del Directorio participan
-            activamente en las mesas de trabajo de diferentes organismos e instituciones públicos, tanto a nivel local,
-            como provincial y nacional. Entre ellos se encuentran el Ente Mixto de Promoción Turística de Bariloche,
-            EMPROTUR; el Ministerio de Turismo, Cultura y Deportes de la Provincia de Río Negro; y el Ministerio de
-            Turismo de la Nación, la Intendencia de Parques Nacionales y su Comisión Asesora Local, Prefectura Naval
-            Argentina, la Cámara de Turismo, entre otros.
+          <p> En Patagonia Turismo y Aventura, nos dedicamos a ofrecer experiencias únicas en la majestuosa región de la Patagonia Argentina. Nuestra misión es brindar excursiones inolvidables que permitan a nuestros clientes descubrir la belleza natural y la cultura de esta increíble zona del mundo. Con un equipo de guías expertos y apasionados, garantizamos seguridad, calidad y diversión en cada una de nuestras aventuras.
+<br>
+            Desde caminatas en glaciares hasta tours por paisajes asombrosos, nos esforzamos por crear recuerdos duraderos y satisfacer todas las necesidades de nuestros viajeros. Además, nos enorgullece ofrecer un servicio personalizado y cercano, adaptándonos a las preferencias y expectativas de cada visitante.
+            
+            ¡Explora la Patagonia con nosotros y vive una aventura incomparable!
           </p>
         </div>
       </div>
     </section>
-<section id="galeria">
-  <div id="app" class="galeria">
-    <div v-if="error">Error al cargar los datos</div>
-    <div class="galeria__title">
-      <h2 class="galeria">GALERIA</h2>
-    </div>
-    <div v-else class="image-group">
-        <div v-for="imagen in datosPaginados" :key="imagen.id" class="image-item">
-            <img :src="imagen.url" alt="imagen">
-        </div>
-    </div>
-    <div id="botonesContainer">
-        <button type="button" id="prevPagina" v-on:click="paginaAnterior">Anterior</button>
-        <button type="button" id="proximaPagina" v-on:click="paginaSiguiente">Siguiente</button>
-    </div>
-</div>
-</section>
+
     <section class="contacto" id="contacto">
       <div class="contacto__title">
         <h2>Formulario Contacto</h2>
@@ -613,7 +620,8 @@
   </div>
   <!--Fin de Ventana Modal-->
   <script src="https://unpkg.com/vue@3"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/paquetes.js"></script>
   <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
 </body>
 </html>
